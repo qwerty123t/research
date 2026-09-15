@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Исследования — индекс записей</title>
+  <meta name="description" content="Индекс открытых исследований: заметки, эксперименты и разборы.">
+  <meta name="theme-color" content="#f4efe4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#15130f" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Исследования — индекс записей">
+  <meta property="og:description" content="Индекс открытых исследований: заметки, эксперименты и разборы.">
+  <meta property="og:locale" content="ru_RU">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231b1813'/%3E%3Cpath d='M16 6v20M7.3 11l17.4 10M24.7 11L7.3 21' stroke='%23e07a45' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#index">Перейти к записям</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="masthead">
+    <div class="wrap">
+      <div class="masthead__bar rise" style="--d:0">
+        <span class="mono-label">Индекс исследований</span>
+        <span class="mono-label masthead__bar-mid">Web / Notes</span>
+        <button class="theme-toggle mono-label" id="theme-toggle" type="button" aria-label="Переключить тему">
+          тема: <span data-theme-label>тёмная</span>
+        </button>
+      </div>
+
+      <h1 class="masthead__title rise" style="--d:60">
+        Исследования<span class="masthead__tick" aria-hidden="true">*</span>
+      </h1>
+
+      <p class="masthead__lede rise" style="--d:140">
+        Здесь собираются рабочие материалы: <em>черновики, эксперименты и разборы</em>.
+        Каждая запись — отдельный вопрос, доведённый до той или иной степени ясности.
+      </p>
+
+      <dl class="facts rise" style="--d:220">
+        <div class="facts__item">
+          <dt>Формат</dt>
+          <dd>веб-исследования</dd>
+        </div>
+        <div class="facts__item">
+          <dt>Записей</dt>
+          <dd id="fact-count">03</dd>
+        </div>
+        <div class="facts__item">
+          <dt>Обновлено</dt>
+          <dd>сентябрь 2026</dd>
+        </div>
+        <div class="facts__item">
+          <dt>Статус</dt>
+          <dd><span class="live-dot" aria-hidden="true"></span>активно</dd>
+        </div>
+      </dl>
+    </div>
+  </header>
+
+  <main id="index" class="wrap">
+    <div class="section-head rise" style="--d:300">
+      <h2 class="mono-label">Записи</h2>
+      <span class="mono-label" id="entries-count">3 записи</span>
+    </div>
+
+    <ol class="entries">
+      <!--
+        ЗАПИСЬ. Чтобы добавить новую — скопируйте блок <li class="entry">…</li>
+        ниже и поменяйте заголовок, год, теги, статус и аннотацию.
+        Номера проставляются автоматически.
+      -->
+      <li class="entry rise" style="--d:340">
+        <span class="entry__num" aria-hidden="true"></span>
+        <div class="entry__body">
+          <h3 class="entry__title">Куда уходит внимание при чтении ленты</h3>
+          <p class="entry__meta">
+            <span class="entry__year">2026</span>
+            <span class="tag">внимание</span>
+            <span class="tag">интерфейсы</span>
+          </p>
+          <details class="entry__more">
+            <summary>
+              <span>Аннотация</span>
+              <span class="entry__more-plus" aria-hidden="true">+</span>
+            </summary>
+            <div class="entry__abstract">
+              <p>
+                Наблюдение за тем, как бесконечная лента меняет ритм чтения: где взгляд
+                останавливается, что пролистывается и какие элементы удерживают внимание
+                дольше всего. Черновая разметка паттернов и первые выводы.
+              </p>
+              <!-- <p><a href="#">Читать полный текст →</a></p> -->
+            </div>
+          </details>
+        </div>
+        <span class="entry__status" data-status="wip">в работе</span>
+      </li>
+
+      <li class="entry rise" style="--d:410">
+        <span class="entry__num" aria-hidden="true"></span>
+        <div class="entry__body">
+          <h3 class="entry__title">Метрики доверия к источникам</h3>
+          <p class="entry__meta">
+            <span class="entry__year">2026</span>
+            <span class="tag">медиа</span>
+            <span class="tag">метрики</span>
+          </p>
+          <details class="entry__more">
+            <summary>
+              <span>Аннотация</span>
+              <span class="entry__more-plus" aria-hidden="true">+</span>
+            </summary>
+            <div class="entry__abstract">
+              <p>
+                Попытка собрать набор признаков, по которым читатель решает, заслуживает ли
+                источник доверия: прозрачность ссылок, воспроизводимость данных, язык
+                формулировок. Разбор примеров и заметки о том, что не работает.
+              </p>
+            </div>
+          </details>
+        </div>
+        <span class="entry__status" data-status="done">завершено</span>
+      </li>
+
+      <li class="entry rise" style="--d:480">
+        <span class="entry__num" aria-hidden="true"></span>
+        <div class="entry__body">
+          <h3 class="entry__title">Долгий след: как устаревают заметки</h3>
+          <p class="entry__meta">
+            <span class="entry__year">2026</span>
+            <span class="tag">архив</span>
+            <span class="tag">заметки</span>
+          </p>
+          <details class="entry__more">
+            <summary>
+              <span>Аннотация</span>
+              <span class="entry__more-plus" aria-hidden="true">+</span>
+            </summary>
+            <div class="entry__abstract">
+              <p>
+                Что происходит с записями через год и три: какие выводы подтверждаются,
+                какие тихо теряют смысл и как это замечать заранее. Наброски системы
+                ревизии собственного архива.
+              </p>
+            </div>
+          </details>
+        </div>
+        <span class="entry__status" data-status="draft">черновик</span>
+      </li>
+    </ol>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__row">
+      <span class="mono-label">© <span id="year">2026</span> — Ваше имя</span>
+      <span class="mono-label"><a href="https://github.com/">GitHub</a></span>
+      <span class="mono-label">HTML + CSS, без сборки</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

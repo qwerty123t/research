@@ -1,0 +1,31 @@
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Редакторы
+.vscode/
+.idea/
+*.swp
+*~
+
+# Окружение и секреты
+.env
+.env.*
+*.local
+
+# Логи
+*.log
+npm-debug.log*
+
+# Node (на случай, если позже появится сборка)
+node_modules/
+dist/
+.cache/
+
+# Временные файлы
+tmp/
+*.tmp
+
+# Служебные файлы инструментов
+.playwright-mcp/
