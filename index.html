@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Как ИИ, качественные фото и видео увеличивают продажи недвижимости: систематический обзор 40 источников</title>
-  <meta name="description" content="Систематический обзор 40 источников 2011–2026: профессиональные фото, 3D-туры, видео и ИИ в продажах недвижимости. Цена, срок продажи, просмотры и живые показы — с первоисточниками, уровнями достоверности A–D и разбором неподтверждённых цифр вроде «+403%».">
+  <title>Как ИИ, качественные фото и видео увеличивают продажи недвижимости: структурированный обзор 40 источников</title>
+  <meta name="description" content="Структурированный обзор 40 источников 2011–2026: профессиональные фото, 3D-туры, видео и ИИ в продажах недвижимости. Цена, срок продажи, просмотры и живые показы — с первоисточниками, уровнями достоверности по GRADE (A–D) и разбором неподтверждённых цифр вроде «+403%».">
   <meta name="theme-color" content="#ffffff">
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Систематический обзор · DeepSeek 4.1">
+  <meta property="og:site_name" content="Структурированный обзор · DeepSeek 4.1">
   <meta property="og:url" content="https://qwerty123t.github.io/research/">
   <meta property="og:title" content="Как ИИ, качественные фото и видео увеличивают продажи недвижимости: обзор 40 источников">
-  <meta property="og:description" content="Что подтверждено: VR-туры — −44% к сроку продажи, профессиональные фото — на 3 недели быстрее, ИИ-стейджинг — 67 → 34 дня. Что нет: «+403% заявок» и «68% быстрее». Все источники, уровни A–D и DOI в обзоре.">
+  <meta property="og:description" content="Что подтверждено: VR-туры — −44% к сроку продажи, профессиональные фото — на 3 недели быстрее, ИИ-стейджинг — 67 → 34 дня. Что нет: «+403% заявок» и «68% быстрее». Все источники, уровни достоверности по GRADE и DOI в обзоре.">
   <meta property="og:image" content="https://qwerty123t.github.io/research/og-issledovaniya.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Систематический обзор: ИИ, качественные фото и видео в продажах недвижимости">
+  <meta property="og:image:alt" content="Структурированный обзор: ИИ, качественные фото и видео в продажах недвижимости">
   <meta property="og:locale" content="ru_RU">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Как ИИ, качественные фото и видео увеличивают продажи недвижимости: обзор 40 источников">
-  <meta name="twitter:description" content="Подтверждённые цифры и разбор неподтверждённых: 40 источников с прямыми ссылками, уровни достоверности A–D.">
+  <meta name="twitter:description" content="Подтверждённые цифры и разбор неподтверждённых: 40 источников с прямыми ссылками, уровни достоверности по адаптированной шкале GRADE.">
   <meta name="twitter:image" content="https://qwerty123t.github.io/research/og-issledovaniya.png">
   <link rel="canonical" href="https://qwerty123t.github.io/research/">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23123c66'/%3E%3Cpath d='M11 7h7l4 4v14H11z' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M13.5 12.5h3M13.5 16h6M13.5 19.5h6' stroke='%23ffffff' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E">
@@ -134,17 +134,6 @@
       font-family: var(--sans);
       font-size: 0.74rem;
     }
-
-    .topnav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.35rem 1.4rem;
-      font-family: var(--sans);
-      font-size: 0.88rem;
-    }
-
-    .topnav a { text-decoration: none; color: var(--body); }
-    .topnav a:hover { color: var(--link); text-decoration: underline; }
 
     /* ——— Хлебные крошки ——— */
     .crumbs {
@@ -403,6 +392,18 @@
       font-size: 0.92rem;
     }
 
+    .table--results tbody td:first-child {
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 0.92rem;
+    }
+
+    .table--results tbody td:last-child {
+      color: var(--muted);
+      font-family: var(--sans);
+      font-size: 0.84rem;
+    }
+
     /* ——— Вердикты в таблице «не подтвердилось» ——— */
     .verdict {
       display: inline-block;
@@ -418,41 +419,6 @@
     .verdict--no { background: #fdecea; color: var(--red); }
     .verdict--check { background: #fff6e0; color: var(--amber); }
     .verdict--yes { background: #eaf6eb; color: var(--green); }
-
-    /* ——— Метрики ——— */
-    .metrics {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr));
-      gap: 0.6rem;
-      margin-top: 1rem;
-    }
-
-    .metric {
-      padding: 0.65rem 0.85rem;
-      border: 1px solid var(--line-soft);
-      border-left: 3px solid var(--brand);
-      border-radius: 0 4px 4px 0;
-      background: #fbfcfe;
-    }
-
-    .metric__val {
-      display: block;
-      color: var(--brand);
-      font-family: var(--serif);
-      font-size: 1.22rem;
-      font-weight: 700;
-      line-height: 1.2;
-      font-variant-numeric: tabular-nums;
-    }
-
-    .metric__label {
-      display: block;
-      margin-top: 0.25rem;
-      color: var(--muted);
-      font-family: var(--sans);
-      font-size: 0.8rem;
-      line-height: 1.45;
-    }
 
     .ref-line {
       margin-top: 0.8rem !important;
@@ -494,6 +460,39 @@
     .lvl--b { background: var(--link); }
     .lvl--c { background: var(--amber); }
     .lvl--d { background: var(--red); }
+
+    /* ——— Диаграмма эффектов ——— */
+    .chart {
+      margin: 1.4rem 0 0;
+      padding: 0.9rem 1rem 0.6rem;
+      border: 1px solid var(--line-soft);
+      border-radius: var(--radius);
+      background: #fbfcfe;
+    }
+
+    .chart svg { display: block; width: 100%; height: auto; }
+
+    .chart__title {
+      margin: 0 0 0.4rem;
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .chart__legend {
+      margin: 0.4rem 0 0;
+      color: var(--muted);
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      line-height: 1.5;
+    }
+
+    .chart text { font-family: var(--sans); fill: var(--body); }
+
+    /* ——— Реестр данных ——— */
+    .registry-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem; }
+    .refs__archive { color: var(--muted); }
 
     /* ——— Список источников ——— */
     .refs { margin: 0.8rem 0 0; padding: 0; list-style: none; }
@@ -574,6 +573,34 @@
       gap: 1rem;
     }
 
+    .side-nav { display: grid; }
+
+    .side-nav a {
+      padding: 0.45rem 0;
+      border-top: 1px solid var(--line-soft);
+      color: var(--link);
+      font-family: var(--sans);
+      font-size: 0.86rem;
+      text-decoration: none;
+    }
+
+    .side-nav a:first-child { border-top: none; }
+    .side-nav a:hover { color: var(--brand); text-decoration: underline; }
+
+    /* ——— Блоки внизу страницы ——— */
+    .page-notes {
+      padding-block: 2rem 2.4rem;
+      border-top: 1px solid var(--line);
+      background: var(--bg-soft);
+    }
+
+    .page-notes__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+      gap: 1rem;
+      align-items: start;
+    }
+
     .card {
       border: 1px solid var(--line);
       border-radius: var(--radius);
@@ -600,33 +627,6 @@
     .card dt { color: var(--muted); font-family: var(--sans); font-size: 0.74rem; }
     .card dd { margin: 0.1rem 0 0.55rem; font-size: 0.92rem; }
     .card dd:last-child { margin-bottom: 0; }
-
-    .figures { margin: 0; padding: 0; list-style: none; }
-
-    .figures li {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 0.6rem;
-      padding: 0.45rem 0;
-      border-top: 1px solid var(--line-soft);
-    }
-
-    .figures li:first-child { border-top: none; padding-top: 0; }
-
-    .figures__val {
-      color: var(--brand);
-      font-weight: 700;
-      white-space: nowrap;
-    }
-
-    .figures__label {
-      color: var(--muted);
-      font-family: var(--sans);
-      font-size: 0.78rem;
-      line-height: 1.35;
-      text-align: right;
-    }
 
     .levels { margin: 0; padding: 0; list-style: none; }
 
@@ -722,15 +722,14 @@
     /* ——— Адаптив ——— */
     @media (max-width: 980px) {
       .layout { grid-template-columns: minmax(0, 1fr); gap: 2.2rem; }
-      .sidebar { position: static; }
+      .sidebar { position: static; order: -1; }
+      .page-notes__grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 560px) {
       body { font-size: 16px; }
       .shell { width: min(100% - 1.6rem, var(--shell)); }
-      .topnav { display: none; }
       .meta-strip { grid-template-columns: 1fr 1fr; }
-      .metrics { grid-template-columns: 1fr 1fr; }
       .crumbs__inner > :nth-child(3),
       .crumbs__inner > :nth-child(4) { display: none; }
     }
@@ -741,7 +740,7 @@
     }
 
     @media print {
-      .topnav, .actions, .sidebar, .crumbs, .skip, dialog, .toast { display: none !important; }
+      .actions, .sidebar, .crumbs, .skip, dialog, .toast { display: none !important; }
       .layout { display: block; padding-block: 0.5rem; }
       body { font-size: 12pt; }
       a { color: inherit; }
@@ -753,12 +752,12 @@
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
     "headline": "Как ИИ, качественные фото и видео увеличивают продажи недвижимости",
-    "alternativeHeadline": "Систематический обзор 40 источников 2011–2026 годов",
-    "description": "Систематизированный обзор открытых публикаций о профессиональных фото, 3D-турах, видео и ИИ-инструментах в продажах недвижимости: эффекты на цену, срок продажи и спрос. Неподтверждённые отраслевые цифры разобраны отдельно.",
+    "alternativeHeadline": "Структурированный обзор 40 источников 2011–2026 годов",
+    "description": "Структурированный обзор открытых публикаций о профессиональных фото, 3D-турах, видео и ИИ-инструментах в продажах недвижимости: эффекты на цену, срок продажи и спрос. Достоверность утверждений оценена по адаптированной шкале GRADE. Неподтверждённые отраслевые цифры разобраны отдельно. Обзор полностью подготовлен языковой моделью без человеческого рецензирования.",
     "inLanguage": "ru",
     "datePublished": "2026-09-16",
     "dateModified": "2026-09-17",
-    "version": "1.1",
+    "version": "1.2",
     "url": "https://qwerty123t.github.io/research/",
     "isAccessibleForFree": true,
     "author": {
@@ -828,25 +827,17 @@
     <div class="shell topbar__inner">
       <span class="brand">
         <span class="brand__text">
-          <span class="brand__name">Систематический обзор</span>
-          <span class="brand__tag">ИИ, фото и видео в продажах недвижимости · автор: DeepSeek 4.1</span>
+          <span class="brand__name">Структурированный обзор</span>
+          <span class="brand__tag">ИИ, фото и видео в продажах недвижимости · автор: DeepSeek 4.1 (языковая модель)</span>
         </span>
       </span>
-      <nav class="topnav" aria-label="Разделы страницы">
-        <a href="#metodika">Методика</a>
-        <a href="#rezultaty">Результаты</a>
-        <a href="#filtr">Фильтр</a>
-        <a href="#mify">Неподтверждённое</a>
-        <a href="#sintez">Синтез</a>
-        <a href="#istochniki">Источники</a>
-      </nav>
     </div>
   </header>
 
   <div class="shell layout">
     <main class="article" id="article">
       <div class="badges">
-        <span class="badge badge--type">Систематический обзор</span>
+        <span class="badge badge--type">Структурированный обзор</span>
         <span class="badge">40 источников · 2011–2026</span>
         <span class="badge badge--open">Открытые источники</span>
       </div>
@@ -856,8 +847,9 @@
       </h1>
 
       <p class="article__byline">
-        Автор: DeepSeek 4.1 (языковая модель) · Систематический обзор: 40 источников — 36 основных
-        и 4 дополнительных · Каждая цифра сверена с первоисточником
+        Автор: DeepSeek 4.1 (языковая модель) · Структурированный обзор: 40 источников — 36 основных
+        и 4 дополнительных · Каждая цифра сверена с открытым первоисточником · Человеческое
+        рецензирование не проводилось
       </p>
 
       <dl class="meta-strip">
@@ -871,7 +863,7 @@
         </div>
         <div>
           <dt>Версия</dt>
-          <dd>1.1</dd>
+          <dd>1.2</dd>
         </div>
         <div>
           <dt>Источников</dt>
@@ -882,8 +874,8 @@
           <dd>2011–2026</dd>
         </div>
         <div>
-          <dt>Уровни</dt>
-          <dd>A 10 · B 5 · C 16 · D 9</dd>
+          <dt>Уровни (GRADE)</dt>
+          <dd>A 10 · B 4 · C 17 · D 9</dd>
         </div>
         <div>
           <dt>Рецензирование</dt>
@@ -908,15 +900,16 @@
         <p>
           <strong>Данные.</strong> 40 открытых источников 2011–2026 годов: 36 исследований корпуса
           обзора и четыре дополнительных публикации. Среди них — рецензируемые журналы
-          (A), препринты и обзорные публикации (B), данные платформ и ассоциаций (C), вендорские исследования
-          и кейсы (D).
+          (A, умеренная достоверность по адаптации GRADE), препринты (B, низкая),
+          данные платформ и обзорная публикация без рецензирования (C, очень низкая),
+          вендорские исследования и кейсы (D, вне синтеза).
         </p>
         <p>
           <strong>Результаты.</strong> Самый устойчивый эффект — ускорение продажи: VR-туры сократили
           срок на 44% (с 34 до 19 дней), профессиональные фото — на три недели в сегменте ≈$400 тыс.,
           ИИ-стейджинг — с 67 до 34 дней в кейсе агентства. Просмотры и обращения растут почти везде:
           от +29–37% у платформ до +159% на пике локдаунов. Влияние на цену умеренное и зависит от
-          сегмента: +1–5% по научному обзору, +$3 400–$11 200 у профессиональных фото, +2–3% у 3D-туров;
+          сегмента: +1–5% по обзорной публикации, +$3 400–$11 200 у профессиональных фото, +2–3% у 3D-туров;
           при этом VR-туры цену не меняют, дороже $1 млн эффект фото исчезает, а AI-описания снижают
           цену на 2%, ускоряя сделку на 9%. Единственная работа, которая измеряет воронку
           до живого показа, — по 3D-турам: онлайн-отсев растёт на 9,6 п.п., а число живых показов
@@ -925,13 +918,17 @@
         </p>
         <p>
           <strong>Выводы.</strong> Визуальные инструменты надёжно ускоряют продажу и увеличивают спрос;
-          на цену они влияют умеренно и не во всех сегментах. ИИ снижает стоимость подготовки объекта
-          и время до сделки, но требует осторожности: разные ИИ-инструменты дают разные ценовые эффекты.
+          на цену они влияют умеренно и не во всех сегментах. ИИ-инструменты ускоряют подготовку
+          объявления и время до сделки, но требуют осторожности: разные ИИ-инструменты дают разные
+          ценовые эффекты.
         </p>
         <p>
           <strong>Ограничения.</strong> Рандомизированных экспериментов на рынке недвижимости в корпусе
           нет: это наблюдательные данные, квазиэксперименты и кейсы компаний. Рынки и периоды различаются,
-          а проценты из разных источников нельзя сравнивать напрямую.
+          а проценты из разных источников нельзя сравнивать напрямую. Доверительные интервалы
+          первоисточники почти не приводят, поэтому оценки остаются точечными. Обзор подготовлен
+          языковой моделью без человеческого рецензирования: уровни достоверности присвоены
+          ИИ-автором, а не независимыми экспертами.
         </p>
         <p class="keywords">
           <strong>Ключевые слова:</strong> продажи недвижимости; профессиональная фотография; 3D-туры;
@@ -944,9 +941,9 @@
         <div class="table-wrap">
           <table>
             <caption>
-              Таблица 1. Сводка подтверждённых эффектов по четырём направлениям. Уровни: A — рецензируемое
-              исследование, B — препринт или обзорная публикация, C — данные платформы, D — вендорский материал.
-              Цифры и ссылки — в разделах 2.1–2.5.
+              Таблица 1. Сводка подтверждённых эффектов по четырём направлениям. Уровни достоверности —
+              адаптация GRADE: A — умеренная, B — низкая, C — очень низкая, D — очень низкая и не
+              используется в выводах. Цифры и ссылки — в разделах 2.1–2.5.
             </caption>
             <thead>
               <tr>
@@ -958,7 +955,7 @@
             </thead>
             <tbody>
               <tr>
-                <td>Фото · профсъёмка <span class="lvl lvl--b">B</span><span class="lvl lvl--c">C</span></td>
+                <td>Фото · профсъёмка <span class="lvl lvl--a">A</span><span class="lvl lvl--c">C</span></td>
                 <td>+1–5%; +$3 400–$11 200 в сегменте $200 тыс.–$1 млн; в сегменте ≈$400 тыс. — +$10 000; дороже $1 млн эффекта нет</td>
                 <td>−3 недели (сегмент ≈$400 тыс.); 89 дней против 123</td>
                 <td>81% покупателей называют фото самым полезным элементом объявления</td>
@@ -977,7 +974,7 @@
               </tr>
               <tr>
                 <td>ИИ-инструменты <span class="lvl lvl--a">A</span><span class="lvl lvl--b">B</span><span class="lvl lvl--d">D</span></td>
-                <td>+2,7% (визуализация «после ремонта»); −2% (AI-описания); подготовка объекта €2 000 → €24</td>
+                <td>+2,7% (визуализация «после ремонта»); −2% (AI-описания)</td>
                 <td>−49% (кейс стейджинга); −10–20% (визуализация); −9% (описания)</td>
                 <td>+63–90% просмотров; 46% риелторов уже используют AI-контент</td>
               </tr>
@@ -1006,21 +1003,38 @@
           <li>Каждая цифра снабжена номером в списке источников и прямой ссылкой на первоисточник; в тексте номера кликабельны и ведут к описанию работы.</li>
           <li>Материалы компаний о собственных проектах не приравниваются к исследованиям и помечены уровнем D.</li>
           <li>Цифры без первоисточника и публикации без методологии в синтез не включались; самые тиражируемые из них разобраны отдельно в разделе 3.</li>
-          <li>Дата обращения ко всем источникам — 17.09.2026.</li>
+          <li>Автор обзора — языковая модель DeepSeek 4.1: человеческое рецензирование не проводилось, уровни достоверности и текст целиком подготовлены ИИ.</li>
+          <li>Дата обращения ко всем источникам — 17.09.2026. Архивные копии ссылок подставляются автоматически (Wayback Machine), извлечённые данные сведены в реестр в разделе 7.</li>
         </ul>
-        <h3 id="metodika-ocenka">1.2. Оценка достоверности</h3>
+        <h3 id="metodika-ocenka">1.2. Уровни достоверности: адаптация GRADE</h3>
+        <p>
+          Вместо собственной шкалы обзор использует адаптированную схему GRADE (Grading of
+          Recommendations Assessment, Development and Evaluation): достоверность оценивается
+          для каждого утверждения, а не для источника целиком. Все включённые работы
+          наблюдательные — рандомизированных экспериментов в корпусе нет, — поэтому исходный
+          уровень GRADE не может быть выше «умеренного»; отсутствие раскрытой методологии и
+          коммерческий интерес понижают его дальше. Оценки присвоены ИИ-автором без независимой
+          перекрёстной проверки.
+        </p>
         <ul>
-          <li><strong>A · рецензируемое (10 работ)</strong> — журнальная статья с рецензированием: Information Systems Research, Journal of Property Investment &amp; Finance, Manufacturing &amp; Service Operations Management и другие.</li>
-          <li><strong>B · препринт или обзорная публикация (5 работ)</strong> — SSRN, arXiv и обзорная публикация в электронном журнале Science Online; все — вне рецензируемых журналов из списка A.</li>
-          <li><strong>C · данные платформы (16 работ)</strong> — Zillow, realtor.com, Redfin, NAR, Яндекс Недвижимость, Циан.</li>
-          <li><strong>D · вендор (9 работ)</strong> — исследования и кейсы компаний: Matterport, Stage Virtually, Pedra AI, RESA, Hovver, Domain, Business Insider и разбор отраслевых статистик.</li>
+          <li><strong>A · умеренная (10 работ)</strong> — рецензируемая журнальная статья с контролем конфаундеров или квазиэкспериментальным дизайном (сопоставление по склонности PSM, инструментальные переменные IV, разность разностей DiD): Information Systems Research, Journal of Property Investment &amp; Finance, Housing Studies, JRER, JREL, JREFE, MSOM и другие.</li>
+          <li><strong>B · низкая (4 работы)</strong> — препринт без рецензирования: SSRN и arXiv. Дизайн может быть строгим, но работа не проходила независимую экспертизу.</li>
+          <li><strong>C · очень низкая (17 работ)</strong> — наблюдательные данные платформы или ассоциации и обзорная публикация в электронном журнале без рецензирования: Zillow, realtor.com, Redfin, NAR, Яндекс Недвижимость, Циан, Science Online. Есть коммерческий интерес и/или не раскрыта методология.</li>
+          <li><strong>D · очень низкая, вне синтеза (9 работ)</strong> — вендорские исследования и кейсы: Matterport, Stage Virtually, Pedra AI, RESA, Hovver, Domain, Business Insider и разбор отраслевых статистик. Цифры приводятся для полноты, но в выводы не включаются.</li>
         </ul>
         <p class="note">
-          <strong>Оговорка о «систематичности».</strong> Это систематизированный обзор с проверкой
-          первоисточников, а не обзор по протоколу PRISMA: протокол не регистрировался, а поиск
-          не воспроизводится до последней строки. Отбор устроен так, что в каталог попадали работы
-          с подтверждённым эффектом, — это создаёт риск публикационного смещения, о котором
-          предупреждает раздел 5.
+          <strong>Почему максимум — «умеренная».</strong> GRADE присваивает высокую достоверность
+          только рандомизированным данным; в корпусе обзора РКИ нет — единственный
+          причинно-чистый полевой эксперимент <a href="#ref-11">[11]</a> проведён в онлайн-ритейле,
+          а не в недвижимости. Поэтому верхняя граница для этого обзора — «умеренная», и понижать
+          её дополнительно могут риск смещения отбора и интересы платформ.
+        </p>
+        <p class="note">
+          <strong>Оговорка о статусе обзора.</strong> Это структурированный (narrative) обзор
+          с проверкой первоисточников, а не систематический обзор по протоколу PRISMA: протокол
+          не регистрировался, а поиск не воспроизводится до последней строки. Отбор устроен так,
+          что в каталог попадали работы с подтверждённым эффектом, — это создаёт риск
+          публикационного смещения, о котором предупреждает раздел 5.
         </p>
       </section>
 
@@ -1033,9 +1047,9 @@
         </p>
 
         <h3 id="foto">
-          2.1. Профессиональные фото подняли цену на $3 400–11 200 и ускорили продажу на 3 недели
-          <span class="lvl lvl--b" title="Обзорная публикация">B</span>
-          <span class="lvl lvl--c" title="Данные платформы">C</span>
+          2.1. Профессиональные фото: умеренный рост цены в среднем сегменте и ускорение продажи
+          <span class="lvl lvl--a" title="GRADE: умеренная достоверность">A</span>
+          <span class="lvl lvl--c" title="GRADE: очень низкая достоверность">C</span>
         </h3>
         <p>
           Redfin проанализировала собственные сделки: дома стоимостью $200 тыс. – $1 млн
@@ -1048,10 +1062,11 @@
         </p>
         <p>
           Обзорная публикация Science Online (2025) обобщает данные разных рынков: объекты
-          с профессиональной съёмкой продаются в среднем за 89 дней против 123; типичный разброс
-          по сегментам — 30–45 против 60+ дней; цена продажи растёт в среднем на 1–5%, а в среднем
-          ценовом сегменте — на $3 000–$11 000 <a href="#ref-35">[35]</a>. Это ориентиры, а не
-          результат единого контролируемого эксперимента.
+          с профессиональной съёмкой продаются в среднем за 89 дней против 123 — на 28% быстрее;
+          типичный разброс по сегментам — 30–45 против 60+ дней; цена продажи растёт в среднем
+          на 1–5%, а в среднем ценовом сегменте — на $3 000–$11 000 <a href="#ref-35">[35]</a>.
+          Это ориентиры, а не результат единого контролируемого эксперимента: публикация вышла
+          в электронном журнале без рецензирования и потому отнесена к уровню C.
         </p>
         <p>
           Академические работы подтверждают направление эффекта, но добавляют нюансы: дополнительные
@@ -1073,27 +1088,53 @@
           обычных снимков против нескольких качественных» в корпусе нет: это интерпретация,
           а не измеренный факт.
         </p>
-        <div class="metrics">
-          <div class="metric">
-            <span class="metric__val">+$3 400–11 200</span>
-            <span class="metric__label">к цене листинга в диапазоне $200 тыс. – $1 млн, Redfin</span>
-          </div>
-          <div class="metric">
-            <span class="metric__val">−3 недели</span>
-            <span class="metric__label">срок продажи в сегменте ≈$400 тыс.</span>
-          </div>
-          <div class="metric">
-            <span class="metric__val">89 против 123</span>
-            <span class="metric__label">дней: средний срок с профсъёмкой и без неё, Science Online</span>
-          </div>
-          <div class="metric">
-            <span class="metric__val">44% против 13%</span>
-            <span class="metric__label">продаж по цене листинга и выше: самые резкие 10% фото против средней резкости</span>
-          </div>
-          <div class="metric">
-            <span class="metric__val">81%</span>
-            <span class="metric__label">покупателей: фото — самый полезный элемент объявления (NAR, 2025)</span>
-          </div>
+        <div class="table-wrap">
+          <table class="table--results">
+            <caption>
+              Ключевые результаты: профессиональные фото. Значения приведены, как в первоисточниках;
+              базы измерения (цена листинга, премия к аналогам, срок) между собой несопоставимы.
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Показатель</th>
+                <th scope="col">Эффект</th>
+                <th scope="col">Уровень</th>
+                <th scope="col">Источник</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Цена к цене листинга</td>
+                <td>+$3 400–$11 200 в сегменте $200 тыс. – $1 млн; в сегменте ≈$400 тыс. — до +$10 000</td>
+                <td><span class="lvl lvl--c">C</span></td>
+                <td><a href="#ref-25">[25]</a> Redfin</td>
+              </tr>
+              <tr>
+                <td>Срок продажи</td>
+                <td>−3 недели в сегменте ≈$400 тыс.</td>
+                <td><span class="lvl lvl--c">C</span></td>
+                <td><a href="#ref-25">[25]</a> Redfin</td>
+              </tr>
+              <tr>
+                <td>Средний срок продажи</td>
+                <td>89 дней против 123 (−28%)</td>
+                <td><span class="lvl lvl--c">C</span></td>
+                <td><a href="#ref-35">[35]</a> Science Online</td>
+              </tr>
+              <tr>
+                <td>Доля продаж по цене листинга и выше</td>
+                <td>44% против 13% (резкость снимков)</td>
+                <td><span class="lvl lvl--c">C</span></td>
+                <td><a href="#ref-25">[25]</a> Redfin</td>
+              </tr>
+              <tr>
+                <td>Полезность объявления</td>
+                <td>81% назвали фото самым полезным элементом онлайн-поиска</td>
+                <td><span class="lvl lvl--c">C</span></td>
+                <td><a href="#ref-22">[22]</a> NAR</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <p class="ref-line">
           Источники: <a href="#ref-25">[25] Redfin</a> · <a href="#ref-35">[35] Science Online</a> ·
@@ -1110,8 +1151,8 @@
 
         <h3 id="tury">
           2.2. VR- и 3D-туры сократили срок продажи на 44% и подняли просмотры на 37–159%
-          <span class="lvl lvl--a" title="Рецензируемое исследование">A</span>
-          <span class="lvl lvl--c" title="Данные платформы">C</span>
+          <span class="lvl lvl--a" title="GRADE: умеренная достоверность">A</span>
+          <span class="lvl lvl--c" title="GRADE: очень низкая достоверность (данные платформы)">C</span>
         </h3>
         <p>
           Рецензируемое исследование в Information Systems Research (2025): почти 43 000 объектов
@@ -1126,14 +1167,16 @@
         </p>
         <p>
           Ценовые эффекты в MLS скромнее, но положительные: Journal of Real Estate Literature
-          на сделках округа Ориндж (2016) с propensity score matching и 2SLS оценивает премию
+          на сделках округа Ориндж (2016) с сопоставлением по склонности
+          (propensity score matching) и двухшаговым МНК (2SLS) оценивает премию
           виртуальных туров примерно в 2–3% <a href="#ref-3">[3]</a>. Journal of Real Estate Research
           также находит положительную связь туров и фото с ценой, но смешанные эффекты по сроку
           и вероятности продажи <a href="#ref-4">[4]</a>.
         </p>
         <p>
           Zillow Showcase (2025) — самый крупный медиапакет: +79% просмотров страницы, +76%
-          сохранений, +91% репостов, +10 п.п. к вероятности уйти в pending за 14 дней и цена
+          сохранений, +91% репостов, +10 п.п. к вероятности уйти в статус pending
+          (предварительный договор) за 14 дней и цена
           в среднем на 2% (~$7 000) выше похожих объектов <a href="#ref-14">[14]</a>. Здесь важна
           оговорка: измерен эффект всего пакета — ИИ-виртуальный стейджинг, интерактивный 3D-план,
           дрон-облёт и фото высокого разрешения, — а не отдельного видео. Отдельные элементы
@@ -1161,23 +1204,47 @@
           <a href="#ref-34">[34]</a>. Методологии раскрыты не полностью, поэтому в сводные выводы
           эти цифры не включены.
         </p>
-        <div class="metrics">
-          <div class="metric">
-            <span class="metric__val">34 → 19 дней</span>
-            <span class="metric__label">срок продажи с VR-туром, −44%; цена не изменилась [1]</span>
-          </div>
-          <div class="metric">
-            <span class="metric__val">+37–159%</span>
-            <span class="metric__label">просмотров: Яндекс +37%, realtor.com +29–159%, Zillow Showcase +79%</span>
-          </div>
-          <div class="metric">
-            <span class="metric__val">+2–3%</span>
-            <span class="metric__label">к цене сделки в MLS-данных [3]</span>
-          </div>
-          <div class="metric">
-            <span class="metric__val">+32–78%</span>
-            <span class="metric__label">сохранений в избранное у листингов с 3D-туром или планом [15, 16]</span>
-          </div>
+        <div class="table-wrap">
+          <table class="table--results">
+            <caption>
+              Ключевые результаты: 3D- и VR-туры. Данные получены на разных рынках и в разные годы;
+              величины между собой не сравнивать.
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Показатель</th>
+                <th scope="col">Эффект</th>
+                <th scope="col">Уровень</th>
+                <th scope="col">Источник</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Срок экспозиции</td>
+                <td>34 → 19 дней (−44%); цена продажи не изменилась</td>
+                <td><span class="lvl lvl--a">A</span></td>
+                <td><a href="#ref-1">[1]</a> ISR</td>
+              </tr>
+              <tr>
+                <td>Просмотры</td>
+                <td>+29–159% (realtor.com), +37% (Яндекс Недвижимость), +79% (Zillow Showcase)</td>
+                <td><span class="lvl lvl--c">C</span></td>
+                <td><a href="#ref-19">[19]</a>, <a href="#ref-20">[20]</a>, <a href="#ref-27">[27]</a>, <a href="#ref-14">[14]</a></td>
+              </tr>
+              <tr>
+                <td>Цена сделки в MLS</td>
+                <td>+2–3%</td>
+                <td><span class="lvl lvl--a">A</span></td>
+                <td><a href="#ref-3">[3]</a> JREL</td>
+              </tr>
+              <tr>
+                <td>Сохранения в избранное</td>
+                <td>+32% (2020) и +78% (2022) у листингов с 3D-туром или планом этажа</td>
+                <td><span class="lvl lvl--c">C</span></td>
+                <td><a href="#ref-15">[15]</a>, <a href="#ref-16">[16]</a></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <p class="ref-line">
           Источники: <a href="#ref-1">[1] ISR</a> · <a href="#ref-2">[2] Housing Studies</a> ·
@@ -1194,14 +1261,14 @@
         </p>
         <h3 id="video">
           2.3. Видео: подтверждён спрос и вовлечённость, а не рост цены
-          <span class="lvl lvl--c" title="Данные платформы">C</span>
+          <span class="lvl lvl--c" title="GRADE: очень низкая достоверность (данные платформы)">C</span>
         </h3>
         <p>
           Самое известное исследование по видео — The Digital House Hunt (NAR и Google,
           2013): 86% покупателей используют онлайн-видео, чтобы узнать о конкретном районе,
           70% — чтобы осмотреть дом изнутри <a href="#ref-21">[21]</a>. В пандемию спрос
           на видео-туры вырос взрывным образом: +494% запросов за неделю в марте 2020 года,
-          +350% в апреле, просмотры 3D-walkthrough на сайте Redfin — +303%
+          +350% в апреле, просмотры 3D-обходов (walkthrough) на сайте Redfin — +303%
           <a href="#ref-26">[26]</a>. Это данные о спросе и интересе, а не об исходе сделки.
         </p>
         <p>
@@ -1216,23 +1283,41 @@
           75% — соцсети; при этом AR/VR не пробовали 88% агентов, то есть рынок визуальных
           технологий ещё не насыщен <a href="#ref-23">[23]</a>.
         </p>
-        <div class="metrics">
-          <div class="metric">
-            <span class="metric__val">86% / 70%</span>
-            <span class="metric__label">покупателей смотрят видео о районе / об интерьерах (NAR &amp; Google)</span>
-          </div>
-          <div class="metric">
-            <span class="metric__val">+494%</span>
-            <span class="metric__label">рост запросов видео-туров за неделю, март 2020 (Redfin)</span>
-          </div>
-          <div class="metric">
-            <span class="metric__val">+303%</span>
-            <span class="metric__label">просмотры 3D-walkthrough на сайте Redfin в пандемию</span>
-          </div>
-          <div class="metric">
-            <span class="metric__val">52%</span>
-            <span class="metric__label">риелторов используют дрон-фото и видео (NAR, 2025)</span>
-          </div>
+        <div class="table-wrap">
+          <table class="table--results">
+            <caption>
+              Ключевые результаты: видео. Подтверждены спрос и вовлечённость; данных о влиянии
+              на цену и срок продажи в недвижимости в корпусе нет.
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Показатель</th>
+                <th scope="col">Эффект</th>
+                <th scope="col">Уровень</th>
+                <th scope="col">Источник</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Использование видео покупателями</td>
+                <td>86% смотрят видео о районе, 70% — об интерьерах</td>
+                <td><span class="lvl lvl--c">C</span></td>
+                <td><a href="#ref-21">[21]</a> NAR &amp; Google</td>
+              </tr>
+              <tr>
+                <td>Спрос на видео-туры</td>
+                <td>+494% запросов за неделю (март 2020); просмотры 3D-обходов на Redfin +303%</td>
+                <td><span class="lvl lvl--c">C</span></td>
+                <td><a href="#ref-26">[26]</a> Redfin</td>
+              </tr>
+              <tr>
+                <td>Дрон-фото и видео у риелторов</td>
+                <td>52% используют</td>
+                <td><span class="lvl lvl--c">C</span></td>
+                <td><a href="#ref-23">[23]</a> NAR</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <p class="ref-line">
           Источники: <a href="#ref-21">[21] NAR &amp; Google</a> · <a href="#ref-26">[26] Redfin</a> ·
@@ -1247,15 +1332,15 @@
 
         <h3 id="ai">
           2.4. ИИ-инструменты: стейджинг сократил срок на 49%, визуализация подняла цену на 2,7%
-          <span class="lvl lvl--a" title="Рецензируемое исследование">A</span>
-          <span class="lvl lvl--b" title="Препринт">B</span>
-          <span class="lvl lvl--d" title="Кейс компании">D</span>
+          <span class="lvl lvl--a" title="GRADE: умеренная достоверность">A</span>
+          <span class="lvl lvl--b" title="GRADE: низкая достоверность">B</span>
+          <span class="lvl lvl--d" title="GRADE: очень низкая достоверность (вне синтеза)">D</span>
         </h3>
         <p>
           Кейс агентства Kivir Home (Севилья; 7 агентов, ≈33 активных объекта): за 90 дней после
           внедрения ИИ-стейджинга от Pedra AI средний срок продажи сократился с 67 до 34 дней
           (−49%), просмотры объявлений в первые две недели выросли на 63%, обращения покупателей —
-          на 84%, а стоимость подготовки объявления упала с €2 000 до €24 <a href="#ref-37">[37]</a>.
+          на 84% <a href="#ref-37">[37]</a>.
           В отдельных сделках: квартира в Нервьоне получила акцепт предложения на 15-й день при
           среднем сроке по району 45 дней; шале в Альменсилье продано на €12 000 выше запрошенной
           цены.
@@ -1287,27 +1372,47 @@
           о росте предложений на 1–10%, 49% — о сокращении срока, но это восприятие агентов,
           а не измеренные сделки <a href="#ref-24">[24]</a>.
         </p>
-        <div class="metrics">
-          <div class="metric">
-            <span class="metric__val">67 → 34 дня</span>
-            <span class="metric__label">ИИ-стейджинг в кейсе агентства, −49% [37]</span>
-          </div>
-          <div class="metric">
-            <span class="metric__val">+63% / +84%</span>
-            <span class="metric__label">просмотры / обращения в кейсе Pedra AI [37]</span>
-          </div>
-          <div class="metric">
-            <span class="metric__val">€2 000 → €24</span>
-            <span class="metric__label">стоимость подготовки объекта вместо физического стейджинга [37]</span>
-          </div>
-          <div class="metric">
-            <span class="metric__val">+2,7% / −10–20%</span>
-            <span class="metric__label">цена / срок продажи у AI-визуализации «после ремонта» [7]</span>
-          </div>
-          <div class="metric">
-            <span class="metric__val">−2% / −9%</span>
-            <span class="metric__label">AI-описания: цена ниже на 2%, срок короче на 9% [9]</span>
-          </div>
+        <div class="table-wrap">
+          <table class="table--results">
+            <caption>
+              Ключевые результаты: ИИ-инструменты. Инструменты разнородны: стейджинг и визуализация
+              связаны с ростом цены, AI-описания — со снижением.
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Показатель</th>
+                <th scope="col">Эффект</th>
+                <th scope="col">Уровень</th>
+                <th scope="col">Источник</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Срок продажи (кейс ИИ-стейджинга)</td>
+                <td>67 → 34 дня (−49%)</td>
+                <td><span class="lvl lvl--d">D</span></td>
+                <td><a href="#ref-37">[37]</a> Pedra AI</td>
+              </tr>
+              <tr>
+                <td>Просмотры / обращения (кейс)</td>
+                <td>+63% / +84%</td>
+                <td><span class="lvl lvl--d">D</span></td>
+                <td><a href="#ref-37">[37]</a> Pedra AI</td>
+              </tr>
+              <tr>
+                <td>Цена / срок (AI-визуализация «после ремонта»)</td>
+                <td>+2,7% / −10–20%</td>
+                <td><span class="lvl lvl--b">B</span></td>
+                <td><a href="#ref-7">[7]</a> SSRN</td>
+              </tr>
+              <tr>
+                <td>Цена / срок / шанс покупки инвестором (AI-описания)</td>
+                <td>−2% / −9% / +21%</td>
+                <td><span class="lvl lvl--a">A</span></td>
+                <td><a href="#ref-9">[9]</a> JPIF</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <p class="ref-line">
           Источники: <a href="#ref-37">[37] Pedra AI</a> · <a href="#ref-32">[32] Stage Virtually</a> ·
@@ -1325,9 +1430,9 @@
 
         <h3 id="filtr">
           2.5. Тур очищает пул покупателей: эффекта на число живых показов нет
-          <span class="lvl lvl--b" title="Препринт">B</span>
-          <span class="lvl lvl--c" title="Данные платформы">C</span>
-          <span class="lvl lvl--d" title="Кейс компании">D</span>
+          <span class="lvl lvl--b" title="GRADE: низкая достоверность">B</span>
+          <span class="lvl lvl--c" title="GRADE: очень низкая достоверность (данные платформы)">C</span>
+          <span class="lvl lvl--d" title="GRADE: очень низкая достоверность (вне синтеза)">D</span>
         </h3>
         <p>
           Единственная работа корпуса, которая измеряет не только цену и срок, но и воронку
@@ -1337,23 +1442,47 @@
           в округе × общий интерес к виртуальным турам, Google Search Index), компьютерное зрение
           по фото и NLP по описаниям. Это самая строгая оценка корпуса на участке «просмотр → показ».
         </p>
-        <div class="metrics">
-          <div class="metric">
-            <span class="metric__val">+78,4%</span>
-            <span class="metric__label">просмотры объявления, p = .004 [39]</span>
-          </div>
-          <div class="metric">
-            <span class="metric__val">+9,6 п.п.</span>
-            <span class="metric__label">доля отказов «не подходит», p = .009 [39]</span>
-          </div>
-          <div class="metric">
-            <span class="metric__val">−1,8 п.п.</span>
-            <span class="metric__label">конверсия «просмотр → показ» — незначимо [39]</span>
-          </div>
-          <div class="metric">
-            <span class="metric__val">−0,4% / +1,5%</span>
-            <span class="metric__label">цена / срок продажи — незначимо [39]</span>
-          </div>
+        <div class="table-wrap">
+          <table class="table--results">
+            <caption>
+              Ключевые результаты: воронка «просмотр → показ». Единственное прямое измерение
+              в корпусе; значимость приведена по p-значениям.
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Показатель</th>
+                <th scope="col">Эффект</th>
+                <th scope="col">Уровень</th>
+                <th scope="col">Источник</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Просмотры объявления</td>
+                <td>+78,4% (p = .004)</td>
+                <td><span class="lvl lvl--b">B</span></td>
+                <td><a href="#ref-39">[39]</a> SSRN</td>
+              </tr>
+              <tr>
+                <td>Онлайн-отказы «не подходит»</td>
+                <td>+9,6 п.п. (p = .009)</td>
+                <td><span class="lvl lvl--b">B</span></td>
+                <td><a href="#ref-39">[39]</a> SSRN</td>
+              </tr>
+              <tr>
+                <td>Конверсия «просмотр → показ»</td>
+                <td>−1,8 п.п. (незначимо)</td>
+                <td><span class="lvl lvl--b">B</span></td>
+                <td><a href="#ref-39">[39]</a> SSRN</td>
+              </tr>
+              <tr>
+                <td>Цена / срок продажи</td>
+                <td>−0,4% / +1,5% (незначимо)</td>
+                <td><span class="lvl lvl--b">B</span></td>
+                <td><a href="#ref-39">[39]</a> SSRN</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <p>
           Авторы формулируют результат прямо: «VTs help buyers more efficiently screen out poor
@@ -1504,33 +1633,502 @@
             <strong>Главный конфаундер.</strong> Во всех наблюдательных данных лучшее медиа чаще
             получают изначально лучшие объекты. Аккуратнее всего сравнивают Zillow Showcase
             (похожие дома в радиусе 2 миль) <a href="#ref-14">[14]</a> и MLS-исследование
-            с propensity score matching <a href="#ref-3">[3]</a>; но и они не гарантируют
+            с сопоставлением по склонности (propensity score matching) <a href="#ref-3">[3]</a>; но и они не гарантируют
             причинности.
           </li>
         </ul>
+
+        <figure class="chart">
+          <figcaption class="chart__title">Эффект на срок экспозиции: описательное сопоставление, % изменения</figcaption>
+          <svg viewBox="0 0 900 400" role="img" aria-label="Горизонтальная диаграмма изменений срока экспозиции по источникам: от минус 6 до минус 58 процентов, без доверительных интервалов">
+            <line x1="290" y1="48" x2="290" y2="348" stroke="#e7ecf1" stroke-width="1"/>
+            <line x1="385" y1="48" x2="385" y2="348" stroke="#e7ecf1" stroke-width="1"/>
+            <line x1="480" y1="48" x2="480" y2="348" stroke="#e7ecf1" stroke-width="1"/>
+            <line x1="575" y1="48" x2="575" y2="348" stroke="#e7ecf1" stroke-width="1"/>
+            <line x1="670" y1="48" x2="670" y2="348" stroke="#e7ecf1" stroke-width="1"/>
+            <line x1="765" y1="48" x2="765" y2="348" stroke="#e7ecf1" stroke-width="1"/>
+            <line x1="860" y1="48" x2="860" y2="348" stroke="#c3ccd6" stroke-width="1.5"/>
+
+            <text x="290" y="366" font-size="11" text-anchor="middle" fill="#6a737d">−60%</text>
+            <text x="385" y="366" font-size="11" text-anchor="middle" fill="#6a737d">−50%</text>
+            <text x="480" y="366" font-size="11" text-anchor="middle" fill="#6a737d">−40%</text>
+            <text x="575" y="366" font-size="11" text-anchor="middle" fill="#6a737d">−30%</text>
+            <text x="670" y="366" font-size="11" text-anchor="middle" fill="#6a737d">−20%</text>
+            <text x="765" y="366" font-size="11" text-anchor="middle" fill="#6a737d">−10%</text>
+            <text x="860" y="366" font-size="11" text-anchor="middle" fill="#6a737d">0%</text>
+
+            <rect x="442" y="58" width="418" height="22" rx="2" fill="#0c4a8a" opacity="0.85"/>
+            <text x="20" y="73" font-size="13">[1] VR-туры, Китай (A)</text>
+            <text x="434" y="73" font-size="12" text-anchor="end" fill="#0c4a8a">−44%</text>
+
+            <rect x="799" y="96" width="61" height="22" rx="2" fill="#0c4a8a" opacity="0.85"/>
+            <text x="20" y="111" font-size="13">[2] VR-туры, Ухань (A)</text>
+            <text x="791" y="111" font-size="12" text-anchor="end" fill="#0c4a8a">−6,4%</text>
+
+            <rect x="594" y="134" width="266" height="22" rx="2" fill="#0c4a8a" opacity="0.85"/>
+            <text x="20" y="149" font-size="13">[35] Обзор данных (C)</text>
+            <text x="586" y="149" font-size="12" text-anchor="end" fill="#0c4a8a">−28%</text>
+
+            <rect x="717.5" y="172" width="142.5" height="22" rx="2" fill="#0c4a8a" opacity="0.85"/>
+            <text x="20" y="187" font-size="13">[7] AI-визуализация (B)</text>
+            <text x="709.5" y="187" font-size="12" text-anchor="end" fill="#0c4a8a">−15%</text>
+
+            <rect x="775" y="210" width="85" height="22" rx="2" fill="#0c4a8a" opacity="0.85"/>
+            <text x="20" y="225" font-size="13">[9] AI-описания (A)</text>
+            <text x="767" y="225" font-size="12" text-anchor="end" fill="#0c4a8a">−9%</text>
+
+            <rect x="395" y="248" width="465" height="22" rx="2" fill="#0c4a8a" opacity="0.85"/>
+            <text x="20" y="263" font-size="13">[37] ИИ-стейджинг, кейс (D)</text>
+            <text x="387" y="263" font-size="12" text-anchor="end" fill="#0c4a8a">−49%</text>
+
+            <rect x="309" y="286" width="551" height="22" rx="2" fill="#0c4a8a" opacity="0.85"/>
+            <text x="20" y="301" font-size="13">[32] Вирт. стейджинг (D)</text>
+            <text x="301" y="301" font-size="12" text-anchor="end" fill="#0c4a8a">−58%</text>
+
+            <circle cx="856" cy="335" r="4" fill="#0c4a8a"/>
+            <text x="20" y="339" font-size="13">[39] VR, Лос-Анджелес (B)</text>
+            <text x="846" y="339" font-size="12" text-anchor="end" fill="#0c4a8a">незначимо</text>
+          </svg>
+          <p class="chart__legend">
+            Отрицательные значения — объект продан быстрее. <b>Это не мета-анализ:</b> рынки, годы
+            и методики различаются, доверительные интервалы первоисточники почти не приводят
+            (в <a href="#ref-39">[39]</a> есть p-значения), поэтому величины нельзя сравнивать
+            между собой и складывать в один эффект. Для <a href="#ref-7">[7]</a> показана середина
+            заявленного диапазона (−10–20%). Уровни достоверности по GRADE — в подписях столбцов
+            и в реестре (раздел 7), цвет столбцов уровня не кодирует.
+          </p>
+        </figure>
       </section>
 
       <section class="section" id="ogranicheniya">
         <h2 id="ogranicheniya-title">5. Ограничения обзора</h2>
         <ul>
-          <li>Рандомизированных экспериментов на рынке недвижимости в корпусе нет: это наблюдательные данные, квазиэксперименты (PSM, 2SLS, поэтапное внедрение) и кейсы. Единственный причинно-чистый эксперимент <a href="#ref-11">[11]</a> проведён в онлайн-ритейле, а не в недвижимости.</li>
+          <li>Рандомизированных экспериментов на рынке недвижимости в корпусе нет: это наблюдательные данные, квазиэксперименты (сопоставление по склонности, двухшаговый МНК, поэтапное внедрение) и кейсы. Единственный причинно-чистый эксперимент <a href="#ref-11">[11]</a> проведён в онлайн-ритейле, а не в недвижимости.</li>
           <li>Рынки и периоды различаются (США 2013–2025, Китай 2018–2019, Испания 2025, Россия 2024–2026). Проценты из разных источников нельзя сравнивать напрямую.</li>
           <li>Отбор: каталог главной страницы включает работы с подтверждённым эффектом — это публикационное смещение. Отрицательные и нулевые результаты в корпусе есть (<a href="#ref-1">[1]</a>, <a href="#ref-9">[9]</a>, <a href="#ref-25">[25]</a>), но их доля ниже реальной.</li>
           <li>Платформенные и вендорские материалы (уровни C–D) заинтересованы в положительном результате; опросы агентов <a href="#ref-24">[24]</a> измеряют восприятие, а не сделки.</li>
-          <li>Обзор не является PRISMA-регистрированным: это систематизированный разбор открытых публикаций с проверкой каждой цифры по первоисточнику.</li>
+          <li>Доверительные интервалы первоисточники почти не приводят, а разные базы (цена листинга, премия к аналогам, цена сделки) не позволяют объединять проценты в мета-анализ.</li>
+          <li>Обзор не является PRISMA-регистрированным и не проходил человеческое рецензирование: это структурированный разбор открытых публикаций с проверкой каждой цифры по первоисточнику; уровни достоверности присвоены ИИ-автором.</li>
         </ul>
       </section>
 
       <section class="section" id="vyvody">
         <h2 id="vyvody-title">6. Выводы</h2>
         <ul>
-          <li><strong>Улучшение фото увеличивает цену продажи (B/C).</strong> Профессиональная съёмка в сегменте $200 тыс. – $1 млн даёт +$3 400–11 200 к цене листинга, в сегменте ≈$400 тыс. — до +$10 000 <a href="#ref-25">[25]</a>; обзорная работа фиксирует +1–5% <a href="#ref-35">[35]</a>; 81% покупателей называют фото самым полезным элементом объявления <a href="#ref-22">[22]</a>. Ограничения: дороже $1 млн ценового эффекта нет, а после контроля качества объявления средний эффект исчезает <a href="#ref-39">[39]</a>.</li>
-          <li><strong>Улучшение фото сокращает срок продажи (B/C).</strong> В сегменте ≈$400 тыс. — на три недели быстрее, а самые резкие 10% снимков продаются по цене листинга или выше в 44% случаев против 13% <a href="#ref-25">[25]</a>; в среднем 89 дней против 123 <a href="#ref-35">[35]</a>. Оговорка: <a href="#ref-5">[5]</a> измерял количество снимков, а не их качество — там рост числа фото удлинял срок; работает улучшение нескольких ключевых кадров.</li>
+          <li><strong>Улучшение фото увеличивает цену продажи (A/C).</strong> Профессиональная съёмка в сегменте $200 тыс. – $1 млн даёт +$3 400–11 200 к цене листинга, в сегменте ≈$400 тыс. — до +$10 000 <a href="#ref-25">[25]</a>; обзорная публикация фиксирует +1–5% <a href="#ref-35">[35]</a>; 81% покупателей называют фото самым полезным элементом объявления <a href="#ref-22">[22]</a>. Ограничения: дороже $1 млн ценового эффекта нет, а после контроля качества объявления средний эффект исчезает <a href="#ref-39">[39]</a>.</li>
+          <li><strong>Улучшение фото сокращает срок продажи (A/C).</strong> В сегменте ≈$400 тыс. — на три недели быстрее, а самые резкие 10% снимков продаются по цене листинга или выше в 44% случаев против 13% <a href="#ref-25">[25]</a>; в среднем 89 дней против 123 <a href="#ref-35">[35]</a>. Оговорка: <a href="#ref-5">[5]</a> измерял количество снимков, а не их качество — там рост числа фото удлинял срок; работает улучшение нескольких ключевых кадров.</li>
           <li><strong>Видео и 3D-тур сокращают пул лишних кандидатов до визита, а не сами визиты (B).</strong> Единственное прямое измерение: просмотры +78,4%, онлайн-отсев +9,6 п.п., конверсия «просмотр → показ» −1,8 п.п. (незначимо), эффекта на число живых показов нет <a href="#ref-39">[39]</a>. Вендорские «−40–50% показов» методологией не подтверждены и противоречат «+45% запросов на показ» <a href="#ref-32">[32]</a>.</li>
           <li><strong>Сходящийся вывод по цене и сроку: фото + тур — выше цена, короче срок (A–C).</strong> Туры: премия 2–3% в MLS <a href="#ref-3">[3]</a>, срок 34 → 19 дней в Китае (−44%) <a href="#ref-1">[1]</a> и −6,4% в Ухане <a href="#ref-2">[2]</a>; пакет Showcase — +2% к цене, +79% просмотров и +10 п.п. к вероятности pending за 14 дней <a href="#ref-14">[14]</a>. Ни одна работа не подтверждает полный набор — и цена, и срок — с контролем качества объявления: у Redfin <a href="#ref-25">[25]</a> оба эффекта есть, но это наблюдательные данные платформы, а самая строгая оценка <a href="#ref-39">[39]</a> даёт нули. Поэтому это направление, поддерживаемое большинством источников, а не гарантированный результат.</li>
-          <li><strong>ИИ — про стоимость и скорость (A/B/D).</strong> В кейсе ИИ-стейджинга: подготовка объекта €2 000 → €24, срок 67 → 34 дня (−49%), просмотры +63%, обращения +84% <a href="#ref-37">[37]</a>; AI-визуализация «после ремонта» — +2,7% к цене, −10–20% к сроку <a href="#ref-7">[7]</a>; AI-описания — −9% к сроку, но −2% к цене и +21% к шансу покупки инвестором <a href="#ref-9">[9]</a>. Для быстрой продажи подходят, для максимизации цены — осторожно.</li>
+          <li><strong>ИИ — про скорость и подготовку (A/B/D).</strong> В кейсе ИИ-стейджинга: срок 67 → 34 дня (−49%), просмотры +63%, обращения +84% <a href="#ref-37">[37]</a>; AI-визуализация «после ремонта» — +2,7% к цене, −10–20% к сроку <a href="#ref-7">[7]</a>; AI-описания — −9% к сроку, но −2% к цене и +21% к шансу покупки инвестором <a href="#ref-9">[9]</a>. Для быстрой продажи подходят, для максимизации цены — осторожно.</li>
           <li><strong>Проверяемые цифры — только из корпуса, и все они средние (A–C).</strong> «+403% заявок», «73% владельцев» и «68% быстрее» не подтверждаются первоисточниками; эффекты зависят от сегмента — дороже $1 млн ценовой эффект фото исчезает <a href="#ref-25">[25]</a>, а VR не улучшает слабый объект <a href="#ref-1">[1]</a>. Проверяемые ориентиры — в разделах 2.1–2.5.</li>
         </ul>
+      </section>
+
+      <section class="section" id="proverka">
+        <h2 id="proverka-title">7. Проверяемость и извлечённые данные</h2>
+        <p>
+          Реестр ниже сводит все 40 источников к сопоставимому виду: что именно измерено,
+          на каких данных, при каком объёме выборки и с каким эффектом. Доверительные интервалы
+          первоисточники почти не приводят — там, где их нет, стоит «н/д»; это ограничение
+          честнее показать, чем подставлять собственные оценки. Базы измерения различаются,
+          поэтому столбец «Эффект» — не единая шкала, а выписка из первоисточника.
+        </p>
+        <p class="note">
+          <strong>Архивные копии.</strong> К каждой ссылке в списке источников автоматически
+          подставляется архивная копия в Wayback Machine: страницы платформ и блогов могут
+          исчезать или меняться. Кнопка ниже сохраняет копию этой страницы.
+        </p>
+        <div class="table-wrap">
+          <table id="registry">
+            <caption>
+              Таблица 3. Реестр извлечённых данных по 40 источникам. «н/д» — значение в первоисточнике
+              не приводится. Уровни достоверности — адаптация GRADE.
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Источник</th>
+                <th scope="col">Что измерено</th>
+                <th scope="col">Дизайн и данные</th>
+                <th scope="col">Выборка (n)</th>
+                <th scope="col">Эффект</th>
+                <th scope="col">База измерения</th>
+                <th scope="col">GRADE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#ref-1">[1]</a></td>
+                <td>Срок экспозиции, цена</td>
+                <td>Наблюдательные данные, Китай 2018–2019, с контролем объекта</td>
+                <td>≈43 000 объектов</td>
+                <td>34 → 19 дней (−44%); цена — эффекта нет</td>
+                <td>Срок и цена сделки на платформе</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-2">[2]</a></td>
+                <td>Срок маркетинга, разрыв цен</td>
+                <td>Наблюдательные данные, Ухань</td>
+                <td>н/д</td>
+                <td>−6,4% срок; −2% разрыв цен</td>
+                <td>Данные сделок</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-3">[3]</a></td>
+                <td>Цена сделки</td>
+                <td>Сопоставление по склонности (PSM) + двухшаговый МНК (2SLS), округ Ориндж 2016</td>
+                <td>н/д</td>
+                <td>+2–3%</td>
+                <td>Премия к сопоставимым объектам</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-4">[4]</a></td>
+                <td>Цена, срок, вероятность продажи</td>
+                <td>Наблюдательные данные, MLS</td>
+                <td>н/д</td>
+                <td>Цена ↑; срок и вероятность — смешанно</td>
+                <td>Данные MLS</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-5">[5]</a></td>
+                <td>Число фото → цена и срок</td>
+                <td>Гедоническая регрессия, MLS 2011</td>
+                <td>н/д</td>
+                <td>Цена ↑; срок удлиняется</td>
+                <td>Измерялось количество, а не качество фото</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-6">[6]</a></td>
+                <td>Отношение к объекту и агентству</td>
+                <td>Лабораторные данные по VR-турам</td>
+                <td>н/д</td>
+                <td>Отношение улучшается</td>
+                <td>Не данные сделок</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-7">[7]</a></td>
+                <td>Цена, срок</td>
+                <td>Наблюдательные данные, крупная платформа Китая, препринт</td>
+                <td>н/д</td>
+                <td>+2,7% цена; −10% покупатели / −20% продавцы</td>
+                <td>Цена сделки</td>
+                <td>B</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-8">[8]</a></td>
+                <td>Качество изображений → цена и ликвидность</td>
+                <td>Компьютерное зрение (CLIP Q-score), препринт</td>
+                <td>≈500 000 фото</td>
+                <td>Предиктор цены; ликвидность лучше</td>
+                <td>Данные платформы</td>
+                <td>B</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-9">[9]</a></td>
+                <td>Цена, срок, доля покупок инвесторами</td>
+                <td>Регрессия, 6 376 продаж, Южная Австралия</td>
+                <td>6 376 сделок</td>
+                <td>−2% цена; −9% срок; +21% шанс инвестора</td>
+                <td>Цена сделки</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-10">[10]</a></td>
+                <td>Доверие к хозяину объявления</td>
+                <td>Экспериментальные данные, Tourism Management 2016</td>
+                <td>н/д</td>
+                <td>Доверие ↑</td>
+                <td>Смежная отрасль (туризм)</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-11">[11]</a></td>
+                <td>Конверсия, стоимость заказа, возвраты</td>
+                <td>Рандомизированные полевые эксперименты, онлайн-ритейл одежды</td>
+                <td>н/д</td>
+                <td>Конверсия ↑, возвраты ↓</td>
+                <td>Не недвижимость</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-12">[12]</a></td>
+                <td>Цена, ликвидность на онлайн-аукционах</td>
+                <td>Наблюдательные данные, препринт SSRN 2025</td>
+                <td>н/д</td>
+                <td>Цена и ликвидность ↑</td>
+                <td>Аукционный механизм, не классическая продажа</td>
+                <td>B</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-13">[13]</a></td>
+                <td>Заполняемость аренды</td>
+                <td>Данные рынка, Journal of Services Marketing 2025</td>
+                <td>н/д</td>
+                <td>Заполняемость ↑</td>
+                <td>Аренда, не продажа</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-14">[14]</a></td>
+                <td>Просмотры, сохранения, репосты, pending, цена</td>
+                <td>Данные платформы; измерен весь пакет Showcase</td>
+                <td>н/д</td>
+                <td>+79%; +76%; +91%; +10 п.п.; +2% (~$7 000)</td>
+                <td>Похожие дома в радиусе 2 миль</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-15">[15]</a></td>
+                <td>Сохранения в избранное</td>
+                <td>Данные Zillow 2021</td>
+                <td>н/д</td>
+                <td>+32%</td>
+                <td>Данные платформы</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-16">[16]</a></td>
+                <td>Сохранения в избранное</td>
+                <td>Данные Zillow 2023</td>
+                <td>н/д</td>
+                <td>+78%</td>
+                <td>Данные платформы</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-17">[17]</a></td>
+                <td>Готовность осмотреть объект</td>
+                <td>Опрос Zillow 2022</td>
+                <td>н/д</td>
+                <td>81%</td>
+                <td>Опрос покупателей</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-18">[18]</a></td>
+                <td>Отношение к туру вместо визита</td>
+                <td>Опрос Zillow 2024</td>
+                <td>н/д</td>
+                <td>27% предпочли тур; 23% готовы оффер без визита</td>
+                <td>Опрос покупателей</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-19">[19]</a></td>
+                <td>Просмотры, рост онлайн-визитов</td>
+                <td>Данные realtor.com 2020</td>
+                <td>н/д</td>
+                <td>+29%; рост визитов ×2</td>
+                <td>Данные платформы</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-20">[20]</a></td>
+                <td>Просмотры</td>
+                <td>Данные realtor.com 2021, пик локдаунов</td>
+                <td>н/д</td>
+                <td>+159%</td>
+                <td>Данные платформы</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-21">[21]</a></td>
+                <td>Использование видео в поиске</td>
+                <td>Опрос NAR и Google 2013</td>
+                <td>н/д</td>
+                <td>86% про район; 70% про интерьеры</td>
+                <td>Опрос покупателей</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-22">[22]</a></td>
+                <td>Полезность элементов объявления</td>
+                <td>Опрос NAR 2025</td>
+                <td>н/д</td>
+                <td>81% назвали фото самым полезным</td>
+                <td>Опрос покупателей</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-23">[23]</a></td>
+                <td>Использование инструментов риелторами</td>
+                <td>Опрос NAR 2025</td>
+                <td>н/д</td>
+                <td>46% AI-контент; 52% дрон-фото и видео</td>
+                <td>Опрос агентов</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-24">[24]</a></td>
+                <td>Восприятие эффекта стейджинга</td>
+                <td>Опрос NAR 2025</td>
+                <td>н/д</td>
+                <td>49% — срок короче; 29% — цена +1–10%</td>
+                <td>Восприятие агентов, не сделки</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-25">[25]</a></td>
+                <td>Цена к листингу, срок, резкость фото</td>
+                <td>Данные Redfin 2013 (конфликт интересов: Redfin оказывает фотоуслуги)</td>
+                <td>н/д</td>
+                <td>+$3 400–$11 200; ≈$400 тыс. — −3 недели и &gt;$10 000; 44% против 13%; &gt;$1 млн — нет</td>
+                <td>Цена листинга</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-26">[26]</a></td>
+                <td>Спрос на видео-туры</td>
+                <td>Данные Redfin 2020</td>
+                <td>н/д</td>
+                <td>+494% запросов за неделю; +303% просмотров</td>
+                <td>Запросы и просмотры, не сделки</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-27">[27]</a></td>
+                <td>Просмотры, показы телефона</td>
+                <td>Тест Яндекс Недвижимости 2024</td>
+                <td>≈2 500 объявлений</td>
+                <td>+37%; +14%</td>
+                <td>Данные платформы</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-28">[28]</a></td>
+                <td>Доля заселений без живого осмотра</td>
+                <td>Данные Яндекс Аренды</td>
+                <td>н/д</td>
+                <td>≈90%</td>
+                <td>Аренда; заявление платформы</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-29">[29]</a></td>
+                <td>Вовлечённость, просмотры</td>
+                <td>Данные Циан</td>
+                <td>н/д</td>
+                <td>Рост вовлечённости без процентов; значок Росреестра +9% просмотров</td>
+                <td>Данные платформы</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-30">[30]</a></td>
+                <td>Цена, срок</td>
+                <td>Вендор и университет, 4 рынка США; методология раскрыта частично</td>
+                <td>143 575 листингов</td>
+                <td>+4–9% цена; до −31% срок</td>
+                <td>Не раскрыта</td>
+                <td>D</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-31">[31]</a></td>
+                <td>Лиды, конверсия</td>
+                <td>Вендорский кейс 2022</td>
+                <td>н/д</td>
+                <td>+49% лидов; конверсия ×2</td>
+                <td>Данные вендора</td>
+                <td>D</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-32">[32]</a></td>
+                <td>Просмотры, запросы, срок, офферы</td>
+                <td>Вендорское исследование, британские порталы</td>
+                <td>&gt;10 000 листингов</td>
+                <td>+90%; +45%; −58%; офферы +4–8%</td>
+                <td>Данные вендора</td>
+                <td>D</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-33">[33]</a></td>
+                <td>Sale-to-list, срок</td>
+                <td>Отчёт ассоциации RESA, Q3 2025</td>
+                <td>н/д</td>
+                <td>Sale-to-list 109%; срок до 19 дней</td>
+                <td>Данные ассоциации</td>
+                <td>D</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-34">[34]</a></td>
+                <td>Время на листинге, запросы</td>
+                <td>Вендорский кейс Domain 2026</td>
+                <td>н/д</td>
+                <td>Время на листинге ×6; запросы +30%</td>
+                <td>Один кейс</td>
+                <td>D</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-35">[35]</a></td>
+                <td>Срок, цена</td>
+                <td>Обзорная публикация; журнал без рецензирования</td>
+                <td>н/д</td>
+                <td>89 против 123 дней (−28%); +1–5%</td>
+                <td>Сводка разных рынков</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-36">[36]</a></td>
+                <td>Срок, цена</td>
+                <td>Вендорские кейсы, Великобритания</td>
+                <td>н/д</td>
+                <td>Объект £90–100 тыс. → оффер £103 тыс. в день выхода</td>
+                <td>Отдельные кейсы</td>
+                <td>D</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-37">[37]</a></td>
+                <td>Срок, просмотры, обращения</td>
+                <td>Вендорский кейс, 90 дней, без контроля</td>
+                <td>7 агентов, ≈33 объекта</td>
+                <td>67 → 34 дня (−49%); +63%; +84%</td>
+                <td>Внутренние данные агентства</td>
+                <td>D</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-38">[38]</a></td>
+                <td>Проверка мифов о видео</td>
+                <td>Отраслевой разбор агентства; метрики не приводятся</td>
+                <td>н/д</td>
+                <td>6 утверждений без первоисточника</td>
+                <td>—</td>
+                <td>D</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-39">[39]</a></td>
+                <td>Просмотры, отказы, конверсия в показ, цена, срок</td>
+                <td>Инструментальные переменные; 74 374 сделки, Большой Лос-Анджелес</td>
+                <td>74 374 сделки</td>
+                <td>+78,4% (p=.004); +9,6 п.п. (p=.009); −1,8 п.п. (н.з.); −0,4% / +1,5% (н.з.)</td>
+                <td>Данные Redfin</td>
+                <td>B</td>
+              </tr>
+              <tr>
+                <td><a href="#ref-40">[40]</a></td>
+                <td>Офферы без живого просмотра</td>
+                <td>Кейс агентства, Business Insider 2023</td>
+                <td>3 оффера</td>
+                <td>Три оффера без личного визита</td>
+                <td>Один кейс</td>
+                <td>D</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="registry-actions">
+          <button class="btn" type="button" data-csv>Скачать таблицу (CSV)</button>
+          <a class="btn" href="https://web.archive.org/save/https://qwerty123t.github.io/research/" target="_blank" rel="noopener noreferrer">Сохранить страницу в Wayback</a>
+        </div>
+        <p class="note">
+          <strong>Идентификатор.</strong> Собственный DOI обзору не присвоен, поэтому стабильная
+          ссылка — это URL и дата обращения; для долговременного хранения используйте архивную
+          копию или PDF (кнопка «Печать» → «Сохранить как PDF»). Каждую цифру реестра можно
+          проверить по ссылке в столбце «Источник».
+        </p>
       </section>
 
       <section class="section" id="istochniki">
@@ -1545,91 +2143,91 @@
             <span class="refs__num">[1]</span>
             <span class="refs__title">VR-туры сократили срок продажи на 44% (с 34 до 19 дней).</span>
             <span class="refs__meta">Information Systems Research, 2025.</span>
-            <span class="lvl lvl--a" title="Рецензируемое исследование">A</span>
+            <span class="lvl lvl--a" title="GRADE: умеренная достоверность">A</span>
             <span class="refs__links"><a href="https://doi.org/10.1287/isre.2021.9138" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-2"><span class="anchor" id="vr-uhan"></span>
             <span class="refs__num">[2]</span>
             <span class="refs__title">VR-туры сократили срок продажи на 6,4% и сузили разрыв цен на 2%.</span>
             <span class="refs__meta">Housing Studies, 2024.</span>
-            <span class="lvl lvl--a" title="Рецензируемое исследование">A</span>
+            <span class="lvl lvl--a" title="GRADE: умеренная достоверность">A</span>
             <span class="refs__links"><a href="https://doi.org/10.1080/02673037.2022.2074971" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-3"><span class="anchor" id="mls-orange"></span>
             <span class="refs__num">[3]</span>
             <span class="refs__title">Виртуальные туры в MLS подняли цену сделки на 2–3%.</span>
             <span class="refs__meta">Journal of Real Estate Literature, 2021.</span>
-            <span class="lvl lvl--a" title="Рецензируемое исследование">A</span>
+            <span class="lvl lvl--a" title="GRADE: умеренная достоверность">A</span>
             <span class="refs__links"><a href="https://doi.org/10.1080/09277544.2021.1876433" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-4"><span class="anchor" id="mls-2015"></span>
             <span class="refs__num">[4]</span>
             <span class="refs__title">Виртуальные туры и фото в MLS повысили цену продажи.</span>
             <span class="refs__meta">Journal of Real Estate Research, 2015.</span>
-            <span class="lvl lvl--a" title="Рецензируемое исследование">A</span>
+            <span class="lvl lvl--a" title="GRADE: умеренная достоверность">A</span>
             <span class="refs__links"><a href="https://doi.org/10.1080/10835547.2015.12091422" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-5"><span class="anchor" id="foto-benefield"></span>
             <span class="refs__num">[5]</span>
             <span class="refs__title">Больше фото повысило цену, но удлинило срок продажи.</span>
             <span class="refs__meta">Journal of Real Estate Finance and Economics, 2011.</span>
-            <span class="lvl lvl--a" title="Рецензируемое исследование">A</span>
+            <span class="lvl lvl--a" title="GRADE: умеренная достоверность">A</span>
             <span class="refs__links"><a href="https://doi.org/10.1007/s11146-009-9219-6" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-6"><span class="anchor" id="vr-otnoshenie"></span>
             <span class="refs__num">[6]</span>
             <span class="refs__title">VR-туры улучшили отношение к объекту и агентству.</span>
             <span class="refs__meta">Journal of Retailing and Consumer Services, 2020.</span>
-            <span class="lvl lvl--a" title="Рецензируемое исследование">A</span>
+            <span class="lvl lvl--a" title="GRADE: умеренная достоверность">A</span>
             <span class="refs__links"><a href="https://doi.org/10.1016/j.jretconser.2020.102175" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-7"><span class="anchor" id="ai-vizualizaciya"></span>
             <span class="refs__num">[7]</span>
             <span class="refs__title">AI-визуализация «после ремонта» подняла цену на 2,7% и сократила срок продажи на 10–20%.</span>
             <span class="refs__meta">SSRN, препринт, 2026.</span>
-            <span class="lvl lvl--b" title="Препринт">B</span>
+            <span class="lvl lvl--b" title="GRADE: низкая достоверность">B</span>
             <span class="refs__links"><a href="https://doi.org/10.2139/ssrn.6905218" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-8"><span class="anchor" id="ai-kachestvo-foto"></span>
             <span class="refs__num">[8]</span>
             <span class="refs__title">AI-оценка качества фото предсказала цену и ликвидность.</span>
             <span class="refs__meta">arXiv, препринт, 2026.</span>
-            <span class="lvl lvl--b" title="Препринт">B</span>
+            <span class="lvl lvl--b" title="GRADE: низкая достоверность">B</span>
             <span class="refs__links"><a href="https://arxiv.org/abs/2608.01544" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-9"><span class="anchor" id="ai-opisaniya"></span>
             <span class="refs__num">[9]</span>
             <span class="refs__title">AI-описания ускорили продажу на 9%, но снизили цену на 2%.</span>
             <span class="refs__meta">Journal of Property Investment &amp; Finance, 2026.</span>
-            <span class="lvl lvl--a" title="Рецензируемое исследование">A</span>
+            <span class="lvl lvl--a" title="GRADE: умеренная достоверность">A</span>
             <span class="refs__links"><a href="https://doi.org/10.1108/JPIF-01-2026-0008" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-10"><span class="anchor" id="foto-hozyaina"></span>
             <span class="refs__num">[10]</span>
             <span class="refs__title">Фото хозяина повысило доверие к объявлению.</span>
             <span class="refs__meta">Tourism Management, 2016.</span>
-            <span class="lvl lvl--a" title="Рецензируемое исследование">A</span>
+            <span class="lvl lvl--a" title="GRADE: умеренная достоверность">A</span>
             <span class="refs__links"><a href="https://doi.org/10.1016/j.tourman.2016.01.013" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-11"><span class="anchor" id="video-konversiya"></span>
             <span class="refs__num">[11]</span>
             <span class="refs__title">Виртуальная примерка повысила конверсию и снизила возвраты.</span>
             <span class="refs__meta">Manufacturing &amp; Service Operations Management, 2018. Онлайн-ритейл одежды, не недвижимость.</span>
-            <span class="lvl lvl--a" title="Рецензируемое исследование">A</span>
+            <span class="lvl lvl--a" title="GRADE: умеренная достоверность">A</span>
             <span class="refs__links"><a href="https://doi.org/10.1287/msom.2017.0686" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-12"><span class="anchor" id="vr-aukciony"></span>
             <span class="refs__num">[12]</span>
             <span class="refs__title">VR на онлайн-аукционах повысил цену и ликвидность домов.</span>
             <span class="refs__meta">SSRN, препринт, 2025.</span>
-            <span class="lvl lvl--b" title="Препринт">B</span>
+            <span class="lvl lvl--b" title="GRADE: низкая достоверность">B</span>
             <span class="refs__links"><a href="https://doi.org/10.2139/ssrn.5282993" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-13"><span class="anchor" id="dizain-arenda"></span>
             <span class="refs__num">[13]</span>
             <span class="refs__title">Современный дизайн интерьера повысил заполняемость аренды.</span>
             <span class="refs__meta">Journal of Services Marketing, 2025.</span>
-            <span class="lvl lvl--a" title="Рецензируемое исследование">A</span>
+            <span class="lvl lvl--a" title="GRADE: умеренная достоверность">A</span>
             <span class="refs__links"><a href="https://doi.org/10.1108/JSM-09-2024-0481" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li class="refs__head">Данные платформ · сервисы и ассоциации (№ 14–26)</li>
@@ -1637,91 +2235,91 @@
             <span class="refs__num">[14]</span>
             <span class="refs__title">Zillow Showcase увеличил просмотры на 79% и поднял цену на 2%.</span>
             <span class="refs__meta">Zillow, 2025.</span>
-            <span class="lvl lvl--c" title="Данные платформы">C</span>
+            <span class="lvl lvl--c" title="GRADE: очень низкая достоверность (данные платформы)">C</span>
             <span class="refs__links"><a href="https://showingtimeplus.com/showcase-facts" target="_blank" rel="noopener noreferrer">Showcase Facts ↗</a> · <a href="https://www.zillow.com/news/zillow-showcase-brings-listings-to-life" target="_blank" rel="noopener noreferrer">Zillow News ↗</a></span>
           </li>
           <li id="ref-15"><span class="anchor" id="zillow-sohraneniya"></span>
             <span class="refs__num">[15]</span>
             <span class="refs__title">3D-туры увеличили сохранения в избранное на 32%.</span>
             <span class="refs__meta">Zillow, 2021.</span>
-            <span class="lvl lvl--c" title="Данные платформы">C</span>
+            <span class="lvl lvl--c" title="GRADE: очень низкая достоверность (данные платформы)">C</span>
             <span class="refs__links"><a href="https://zillow.mediaroom.com/2021-02-17-Zillow-Launches-Next-Generation-3D-Tours" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-16"><span class="anchor" id="zillow-plan"></span>
             <span class="refs__num">[16]</span>
             <span class="refs__title">3D-тур или план этажа увеличил сохранения на 78%.</span>
             <span class="refs__meta">Zillow, 2023.</span>
-            <span class="lvl lvl--c" title="Данные платформы">C</span>
+            <span class="lvl lvl--c" title="GRADE: очень низкая достоверность (данные платформы)">C</span>
             <span class="refs__links"><a href="https://zillow.mediaroom.com/2023-01-18-New-service-from-ShowingTime-enables-agents-to-deliver-beautiful,-dynamic-listings-with-less-hassle" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-17"><span class="anchor" id="zillow-plan-81"></span>
             <span class="refs__num">[17]</span>
             <span class="refs__title">Понятный план этажа увеличил готовность осмотреть дом до 81%.</span>
             <span class="refs__meta">Zillow Consumer Housing Trends Report, 2022.</span>
-            <span class="lvl lvl--c" title="Данные платформы">C</span>
+            <span class="lvl lvl--c" title="GRADE: очень низкая достоверность (данные платформы)">C</span>
             <span class="refs__links"><a href="https://zillow.mediaroom.com/2022-08-08-Zillows-AI-powered-interactive-home-tours-are-now-available-nationwide" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-18"><span class="anchor" id="zillow-cht"></span>
             <span class="refs__num">[18]</span>
             <span class="refs__title">27% покупателей предпочли бы 3D-тур личному визиту.</span>
             <span class="refs__meta">Zillow Consumer Housing Trends Report, 2024.</span>
-            <span class="lvl lvl--c" title="Данные платформы">C</span>
+            <span class="lvl lvl--c" title="GRADE: очень низкая достоверность (данные платформы)">C</span>
             <span class="refs__links"><a href="https://www.zillow.com/research/buyers-housing-trends-report-2023-32978/" target="_blank" rel="noopener noreferrer">CHTR 2023 ↗</a> · <a href="https://www.zillow.com/research/buyers-housing-trends-report-2024/" target="_blank" rel="noopener noreferrer">CHTR 2024 ↗</a></span>
           </li>
           <li id="ref-19"><span class="anchor" id="realtor-2020"></span>
             <span class="refs__num">[19]</span>
             <span class="refs__title">Виртуальные туры увеличили просмотры на 29% и вдвое ускорили рост визитов.</span>
             <span class="refs__meta">realtor.com, 2020.</span>
-            <span class="lvl lvl--c" title="Данные платформы">C</span>
+            <span class="lvl lvl--c" title="GRADE: очень низкая достоверность (данные платформы)">C</span>
             <span class="refs__links"><a href="https://news.move.com/2020-05-18-Hopeful-Home-Shoppers-Rev-Their-Engines-at-the-Starting-Line" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-20"><span class="anchor" id="realtor-2021"></span>
             <span class="refs__num">[20]</span>
             <span class="refs__title">3D-туры увеличили просмотры на 159% на пике локдаунов.</span>
             <span class="refs__meta">realtor.com, 2021.</span>
-            <span class="lvl lvl--c" title="Данные платформы">C</span>
+            <span class="lvl lvl--c" title="GRADE: очень низкая достоверность (данные платформы)">C</span>
             <span class="refs__links"><a href="https://www.realtor.com/homemade/more-3d-virtual-tours-to-enhance-your-realtor-com-experience/" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-21"><span class="anchor" id="nar-google-video"></span>
             <span class="refs__num">[21]</span>
             <span class="refs__title">Видео о районе смотрят 86% покупателей, 70% — ради осмотра дома изнутри.</span>
             <span class="refs__meta">The Digital House Hunt, NAR &amp; Google, 2013.</span>
-            <span class="lvl lvl--c" title="Данные платформы">C</span>
+            <span class="lvl lvl--c" title="GRADE: очень низкая достоверность (данные платформы)">C</span>
             <span class="refs__links"><a href="https://www.nar.realtor/sites/default/files/documents/Study-Digital-House-Hunt-2013-01_1.pdf" target="_blank" rel="noopener noreferrer">Первоисточник (PDF) ↗</a></span>
           </li>
           <li id="ref-22"><span class="anchor" id="nar-foto-2025"></span>
             <span class="refs__num">[22]</span>
             <span class="refs__title">81% покупателей назвали фото самым полезным элементом объявления.</span>
             <span class="refs__meta">NAR, 2025 Profile of Home Buyers and Sellers, раздел 3: The Home Search Process.</span>
-            <span class="lvl lvl--c" title="Данные платформы">C</span>
+            <span class="lvl lvl--c" title="GRADE: очень низкая достоверность (данные платформы)">C</span>
             <span class="refs__links"><a href="https://www.nar.realtor/sites/default/files/2025-11/2025-profile-of-home-buyers-and-sellers-highlights-11-04-2025.pdf" target="_blank" rel="noopener noreferrer">2025 Profile: highlights (PDF) ↗</a> · <a href="https://prc-pa.net/wp-content/uploads/2025/11/NAR-2025-Profile-of-Buyers-Sellers.pdf" target="_blank" rel="noopener noreferrer">полный отчёт (PDF) ↗</a></span>
           </li>
           <li id="ref-23"><span class="anchor" id="nar-tech-2025"></span>
             <span class="refs__num">[23]</span>
             <span class="refs__title">46% риелторов уже используют AI-контент, 52% — дрон-видео.</span>
             <span class="refs__meta">NAR REALTOR Technology Survey, 2025.</span>
-            <span class="lvl lvl--c" title="Данные платформы">C</span>
+            <span class="lvl lvl--c" title="GRADE: очень низкая достоверность (данные платформы)">C</span>
             <span class="refs__links"><a href="https://www.nar.realtor/newsroom/realtors-embrace-ai-digital-tools-to-enhance-client-service-nar-survey-finds" target="_blank" rel="noopener noreferrer">Пресс-релиз ↗</a> · <a href="https://cms.nar.realtor/sites/default/files/2025-10/2025-realtors-technology-survey-report-10-06-2025_1.pdf" target="_blank" rel="noopener noreferrer">отчёт (PDF) ↗</a></span>
           </li>
           <li id="ref-24"><span class="anchor" id="nar-staging-2025"></span>
             <span class="refs__num">[24]</span>
             <span class="refs__title">У 49% агентов стейджинг ускорил продажу, у 29% поднял цену на 1–10%.</span>
             <span class="refs__meta">NAR, Profile of Home Staging, 2025.</span>
-            <span class="lvl lvl--c" title="Данные платформы">C</span>
+            <span class="lvl lvl--c" title="GRADE: очень низкая достоверность (данные платформы)">C</span>
             <span class="refs__links"><a href="https://www.nar.realtor/press-releases/nar-report-reveals-home-staging-boosts-sale-prices-and-reduces-time-on-market" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-25"><span class="anchor" id="redfin-2013"></span>
             <span class="refs__num">[25]</span>
             <span class="refs__title">Профессиональные фото подняли цену на $3 400–11 200 и ускорили продажу на 3 недели.</span>
             <span class="refs__meta">Redfin, 2013 (перепроверено в 2019).</span>
-            <span class="lvl lvl--c" title="Данные платформы">C</span>
+            <span class="lvl lvl--c" title="GRADE: очень низкая достоверность (данные платформы)">C</span>
             <span class="refs__links"><a href="https://www.redfin.com/blog/professional-real-estate-photos-sell-homes-for-more/" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-26"><span class="anchor" id="redfin-2020"></span>
             <span class="refs__num">[26]</span>
             <span class="refs__title">Спрос на видео-туры вырос на 494% за неделю.</span>
             <span class="refs__meta">Redfin, 2020.</span>
-            <span class="lvl lvl--c" title="Данные платформы">C</span>
+            <span class="lvl lvl--c" title="GRADE: очень низкая достоверность (данные платформы)">C</span>
             <span class="refs__links"><a href="https://www.redfin.com/news/virtual-home-tours-increase-amid-coronavirus/" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li class="refs__head">Российский рынок · Яндекс и Циан (№ 27–29)</li>
@@ -1729,21 +2327,21 @@
             <span class="refs__num">[27]</span>
             <span class="refs__title">3D-туры увеличили просмотры на 37%, показы телефона — на 14%.</span>
             <span class="refs__meta">Яндекс Недвижимость, 2024.</span>
-            <span class="lvl lvl--c" title="Данные платформы">C</span>
+            <span class="lvl lvl--c" title="GRADE: очень низкая достоверность (данные платформы)">C</span>
             <span class="refs__links"><a href="https://www.cnews.ru/news/line/2024-10-30_yandeks_nedvizhimost_kolichestvo" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-28"><span class="anchor" id="yandex-arenda"></span>
             <span class="refs__num">[28]</span>
             <span class="refs__title">90% арендаторов заселяются по 3D-туру без живого осмотра.</span>
             <span class="refs__meta">Журнал Яндекс Аренды, 2026.</span>
-            <span class="lvl lvl--c" title="Данные платформы">C</span>
+            <span class="lvl lvl--c" title="GRADE: очень низкая достоверность (данные платформы)">C</span>
             <span class="refs__links"><a href="https://arenda.yandex.ru/journal/post/smotret-kvartiru-vzhivuyu-ili-ogranichitsya-prosmotrom-obyavleniya-i-3dtura/" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-29"><span class="anchor" id="cian"></span>
             <span class="refs__num">[29]</span>
             <span class="refs__title">Циан: 3D-тур повысил вовлечённость, а значок Росреестра — просмотры на 9%.</span>
             <span class="refs__meta">Циан, 2026.</span>
-            <span class="lvl lvl--c" title="Данные платформы">C</span>
+            <span class="lvl lvl--c" title="GRADE: очень низкая достоверность (данные платформы)">C</span>
             <span class="refs__links"><a href="https://www.cian.ru/novosti-3d-tur-v-razdele-vtorichnoj-nedvizhimosti-pokazhite-obekt-na-360-i-ekonomte-vremja-na-pokazah-342871/" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li class="refs__head">Вендорские исследования · компании и сервисы (№ 30–34)</li>
@@ -1751,79 +2349,79 @@
             <span class="refs__num">[30]</span>
             <span class="refs__title">3D-туры подняли цену на 4–9% и сократили срок продажи до 31%.</span>
             <span class="refs__meta">Matterport / Texas Tech, 2020.</span>
-            <span class="lvl lvl--d" title="Вендорский материал">D</span>
+            <span class="lvl lvl--d" title="GRADE: очень низкая достоверность (вне синтеза)">D</span>
             <span class="refs__links"><a href="https://matterport.com/blog/3d-tours-properties-sell-31-faster-and-higher-price" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-31"><span class="anchor" id="matterport-3dapartment"></span>
             <span class="refs__num">[31]</span>
             <span class="refs__title">3D-туры увеличили лиды на 49% и вдвое ускорили конверсию.</span>
             <span class="refs__meta">Matterport × 3DAPARTMENT, кейс, 2022.</span>
-            <span class="lvl lvl--d" title="Вендорский материал">D</span>
+            <span class="lvl lvl--d" title="GRADE: очень низкая достоверность (вне синтеза)">D</span>
             <span class="refs__links"><a href="https://matterport.com/industries/case-studies/3dapartment-partners-matterport-provide-3d-virtual-tours-and-virtual" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-32"><span class="anchor" id="stagevirtually"></span>
             <span class="refs__num">[32]</span>
             <span class="refs__title">Виртуальный стейджинг увеличил просмотры на 90% и ускорил продажу на 58%.</span>
             <span class="refs__meta">Stage Virtually, 2025.</span>
-            <span class="lvl lvl--d" title="Вендорский материал">D</span>
+            <span class="lvl lvl--d" title="GRADE: очень низкая достоверность (вне синтеза)">D</span>
             <span class="refs__links"><a href="https://stagevirtually.com/blog/do-virtually-staged-homes-sell-faster-data-study-2025" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-33"><span class="anchor" id="resa"></span>
             <span class="refs__num">[33]</span>
-            <span class="refs__title">Стейджинг поднял sale-to-list до 109% и сократил срок до 19 дней.</span>
+            <span class="refs__title">Стейджинг поднял sale-to-list (цена сделки к цене листинга) до 109% и сократил срок до 19 дней.</span>
             <span class="refs__meta">Real Estate Staging Association, Q3 2025.</span>
-            <span class="lvl lvl--d" title="Вендорский материал">D</span>
+            <span class="lvl lvl--d" title="GRADE: очень низкая достоверность (вне синтеза)">D</span>
             <span class="refs__links"><a href="https://www.realestatestagingassociation.com/Statistics" target="_blank" rel="noopener noreferrer">Statistics (Q3 2025) ↗</a></span>
           </li>
           <li id="ref-34"><span class="anchor" id="domain"></span>
             <span class="refs__num">[34]</span>
             <span class="refs__title">3D-туры увеличили время на листинге в 6 раз и запросы покупателей на 30%.</span>
             <span class="refs__meta">Domain, кейс, 2026.</span>
-            <span class="lvl lvl--d" title="Вендорский материал">D</span>
+            <span class="lvl lvl--d" title="GRADE: очень низкая достоверность (вне синтеза)">D</span>
             <span class="refs__links"><a href="https://agent.domain.com.au/success-stories/norman-so-domain-matterport-skylight-tech-suite-1535364/" target="_blank" rel="noopener noreferrer">Кейс Domain (июль 2026) ↗</a></span>
           </li>
           <li class="refs__head">Дополнительные источники обзора (№ 35–38)</li>
           <li id="ref-35">
             <span class="refs__num">[35]</span>
-            <span class="refs__title">Объекты с качественной съёмкой продаются на 32–50% быстрее: 89 дней против 123.</span>
-            <span class="refs__meta">Vasyliuk M. Science Online (электронный журнал), 2025.</span>
-            <span class="lvl lvl--b" title="Обзорная публикация">B</span>
+            <span class="refs__title">Объекты с качественной съёмкой продаются на 28% быстрее: 89 дней против 123.</span>
+            <span class="refs__meta">Vasyliuk M. International Electronic Scientific Journal «Science Online», 2025. Журнал без рецензирования; обзорная публикация, включена как ориентир.</span>
+            <span class="lvl lvl--c" title="GRADE: очень низкая достоверность">C</span>
             <span class="refs__links"><span class="refs__doi">DOI: 10.25313/2524-2695-2025-6-07-23</span> · <a href="https://nauka-online.com/en/publications/other/2025/6/07-23/" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-36">
             <span class="refs__num">[36]</span>
             <span class="refs__title">Кейсы Великобритании: пересъёмка ускорила продажу и подняла цену.</span>
             <span class="refs__meta">Hovver, 2024.</span>
-            <span class="lvl lvl--d" title="Вендорский материал">D</span>
+            <span class="lvl lvl--d" title="GRADE: очень низкая достоверность (вне синтеза)">D</span>
             <span class="refs__links"><a href="https://hovver.net/the-impact-of-property-photography-on-selling-prices-uk-case-studies/" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-37">
             <span class="refs__num">[37]</span>
             <span class="refs__title">ИИ-обработка фото сократила срок продажи с 67 до 34 дней (−49%).</span>
             <span class="refs__meta">Pedra AI × Kivir Home, кейс, 2025.</span>
-            <span class="lvl lvl--d" title="Вендорский материал">D</span>
+            <span class="lvl lvl--d" title="GRADE: очень низкая достоверность (вне синтеза)">D</span>
             <span class="refs__links"><a href="https://pedra.ai/blog/virtual-staging-seville-kivir-home" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li id="ref-38">
             <span class="refs__num">[38]</span>
             <span class="refs__title">Проверка источников популярных видеостатистик: шесть мифов.</span>
             <span class="refs__meta">Aktion Productions, разбор.</span>
-            <span class="lvl lvl--d" title="Отраслевой разбор">D</span>
+            <span class="lvl lvl--d" title="GRADE: очень низкая достоверность (вне синтеза)">D</span>
             <span class="refs__links"><a href="https://aktionproductions.com/real-estate-video-marketing-statistics/" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
           <li class="refs__head">Показы и качество покупателей (№ 39–40)</li>
           <li id="ref-39">
             <span class="refs__num">[39]</span>
             <span class="refs__title">Тур очищает пул: онлайн-отсев +9,6 п.п., эффекта на число живых показов нет.</span>
-            <span class="refs__meta">Zhang M., Troncoso I. Beyond the Hype: Unveiling the Marginal Benefits of Virtual Tours in Real Estate. SSRN, 2023 (ред. 16.06.2025). 74 374 сделки, Большой Лос-Анджелес, IV-подход.</span>
-            <span class="lvl lvl--b" title="Препринт">B</span>
+            <span class="refs__meta">Zhang M., Troncoso I. Beyond the Hype: Unveiling the Marginal Benefits of Virtual Tours in Real Estate. SSRN, 2023 (ред. 16.06.2025). 74 374 сделки, Большой Лос-Анджелес, метод инструментальных переменных (IV).</span>
+            <span class="lvl lvl--b" title="GRADE: низкая достоверность">B</span>
             <span class="refs__links"><a href="https://doi.org/10.2139/ssrn.4517728" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a> · <a href="https://www.library.hbs.edu/working-knowledge/are-virtual-tours-still-worth-it-in-real-estate-evidence-from-75000-home-sales" target="_blank" rel="noopener noreferrer">HBS Working Knowledge ↗</a></span>
           </li>
           <li id="ref-40">
             <span class="refs__num">[40]</span>
             <span class="refs__title">Три оффера от покупателей, не видевших объект вживую (VR-показы).</span>
             <span class="refs__meta">Business Insider, кейс агентства, 14.12.2023.</span>
-            <span class="lvl lvl--d" title="Кейс компании">D</span>
+            <span class="lvl lvl--d" title="GRADE: очень низкая достоверность (вне синтеза)">D</span>
             <span class="refs__links"><a href="https://www.businessinsider.com/how-virtual-reality-tech-tours-help-real-estate-agents-homebuyers-2023-12" target="_blank" rel="noopener noreferrer">Первоисточник ↗</a></span>
           </li>
         </ol>
@@ -1831,96 +2429,77 @@
           Материал обобщает открытые публикации и носит информационный характер. Он не заменяет
           первоисточники: методологию, выборки и точные формулировки смотрите по ссылкам из списка
           источников. Коммерческие материалы отмечены уровнем D и не являются независимыми
-          исследованиями. Уровни A–D — редакторская оценка надёжности источника, а не оценка
-          качества самой сделки или объекта.
+          исследованиями. Уровни A–D — адаптированная шкала GRADE, присвоенная ИИ-автором: это
+          оценка достоверности утверждений, а не оценка качества объекта или сделки. Обзор
+          подготовлен языковой моделью и не проходил человеческое рецензирование.
         </p>
       </section>
     </main>
 
-    <aside class="sidebar" aria-label="Дополнительная информация">
+    <aside class="sidebar" aria-label="Содержание">
       <section class="card">
-        <h2>Сводка</h2>
+        <h2>Содержание</h2>
+        <div class="card__body">
+          <nav class="side-nav" aria-label="Разделы страницы">
+            <a href="#metodika">Методика</a>
+            <a href="#rezultaty">Результаты</a>
+            <a href="#filtr">Фильтр</a>
+            <a href="#mify">Неподтверждённое</a>
+            <a href="#sintez">Синтез</a>
+            <a href="#proverka">Данные и реестр</a>
+            <a href="#istochniki">Источники</a>
+          </nav>
+        </div>
+      </section>
+    </aside>
+  </div>
+
+  <section class="page-notes" aria-label="Дополнительная информация">
+    <div class="shell">
+      <div class="page-notes__grid">
+        <section class="card">
+          <h2>Сводка</h2>
         <div class="card__body">
           <dl>
             <dt>Автор</dt>
             <dd>DeepSeek 4.1 (языковая модель)</dd>
             <dt>Тип публикации</dt>
-            <dd>Систематизированный обзор (не по протоколу PRISMA)</dd>
+            <dd>Структурированный (narrative) обзор, не по протоколу PRISMA</dd>
             <dt>Версия</dt>
-            <dd>1.1 · 17 сентября 2026 г.</dd>
+            <dd>1.2 · 17 сентября 2026 г.</dd>
             <dt>Источников</dt>
             <dd>40: 36 основных + 4 дополнительных</dd>
             <dt>Период данных</dt>
             <dd>2011–2026</dd>
             <dt>DOI</dt>
             <dd>14, плюс 1 препринт arXiv</dd>
-          </dl>
-        </div>
-      </section>
-
-      <section class="card">
-        <h2>О проекте</h2>
-        <div class="card__body">
-          <dl>
-            <dt>Задача</dt>
-            <dd>Свести открытые данные об ИИ, фото и видео в продажах недвижимости и отделить подтверждённое от рекламных цифр</dd>
             <dt>Рецензирование</dt>
-            <dd>Не проходило. Каждая цифра сверена с первоисточником и помечена уровнем надёжности A–D</dd>
+            <dd>не проходило; уровни GRADE присвоены ИИ-автором</dd>
+            <dt>Финансирование</dt>
+            <dd>нет; конфликта интересов нет</dd>
           </dl>
         </div>
       </section>
 
       <section class="card">
-        <h2>Ключевые цифры</h2>
-        <div class="card__body">
-          <ul class="figures">
-            <li>
-              <span class="figures__val">34 → 19 дней</span>
-              <span class="figures__label">VR-туры, −44% <span class="lvl lvl--a">A</span></span>
-            </li>
-            <li>
-              <span class="figures__val">+9,6 п.п.</span>
-              <span class="figures__label">онлайн-отсев, эффекта на показы нет <span class="lvl lvl--b">B</span></span>
-            </li>
-            <li>
-              <span class="figures__val">+$3 400–11 200</span>
-              <span class="figures__label">профессиональные фото <span class="lvl lvl--c">C</span></span>
-            </li>
-            <li>
-              <span class="figures__val">+79%</span>
-              <span class="figures__label">просмотры Showcase <span class="lvl lvl--c">C</span></span>
-            </li>
-            <li>
-              <span class="figures__val">67 → 34 дня</span>
-              <span class="figures__label">ИИ-стейджинг, кейс <span class="lvl lvl--d">D</span></span>
-            </li>
-            <li>
-              <span class="figures__val">−2% / −9%</span>
-              <span class="figures__label">AI-описания: цена / срок <span class="lvl lvl--a">A</span></span>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="card">
-        <h2>Уровни достоверности</h2>
+        <h2>Уровни достоверности (GRADE)</h2>
         <div class="card__body">
           <ul class="levels">
             <li>
               <span class="lvl lvl--a">A</span>
-              <span class="levels__text"><b>Рецензируемое.</b> 10 работ: ISR, JPIF, MSOM, Housing Studies и другие</span>
+              <span class="levels__text"><b>Умеренная.</b> 10 работ: рецензируемые исследования с контролем конфаундеров (ISR, JPIF, MSOM, Housing Studies и другие)</span>
             </li>
             <li>
               <span class="lvl lvl--b">B</span>
-              <span class="levels__text"><b>Препринт или обзорная публикация.</b> 5 работ: SSRN, arXiv, Science Online</span>
+              <span class="levels__text"><b>Низкая.</b> 4 работы: препринты SSRN и arXiv без рецензирования</span>
             </li>
             <li>
               <span class="lvl lvl--c">C</span>
-              <span class="levels__text"><b>Данные платформы.</b> 16 работ: Zillow, Redfin, NAR, Яндекс, Циан</span>
+              <span class="levels__text"><b>Очень низкая.</b> 17 работ: данные платформ и обзорная публикация без рецензирования (Zillow, Redfin, NAR, Яндекс, Циан, Science Online)</span>
             </li>
             <li>
               <span class="lvl lvl--d">D</span>
-              <span class="levels__text"><b>Вендор.</b> 9 работ: Matterport, Stage Virtually, Pedra AI и другие</span>
+              <span class="levels__text"><b>Очень низкая, вне синтеза.</b> 9 работ: вендорские кейсы (Matterport, Stage Virtually, Pedra AI и другие)</span>
             </li>
           </ul>
         </div>
@@ -1930,19 +2509,20 @@
         <h2>Как цитировать</h2>
         <div class="card__body">
           <p class="citation" id="citation-text">
-            Как ИИ, качественные фото и видео увеличивают продажи недвижимости: систематический обзор / DeepSeek 4.1. — 2026.
+            Как ИИ, качественные фото и видео увеличивают продажи недвижимости: структурированный обзор / DeepSeek 4.1. — 2026.
           </p>
           <button class="btn" type="button" data-copy-citation>Скопировать цитату</button>
         </div>
       </section>
-    </aside>
-  </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="shell">
       <p>
-        Систематический обзор «Как ИИ, качественные фото и видео увеличивают продажи недвижимости» ·
-        Автор: DeepSeek 4.1 · Версия 1.1 от 17 сентября 2026 г.
+        Структурированный обзор «Как ИИ, качественные фото и видео увеличивают продажи недвижимости» ·
+        Автор: DeepSeek 4.1 · Версия 1.2 от 17 сентября 2026 г.
       </p>
       <p>
         Будут вопросы к цифрам — откройте первоисточник из списка источников: у каждого результата
@@ -1974,7 +2554,7 @@
 
       const ACCESS_DATE = "17.09.2026";
       const PAGE_URL = location.href.split("#")[0];
-      const citation = `Как ИИ, качественные фото и видео увеличивают продажи недвижимости: систематический обзор / DeepSeek 4.1 (ИИ-модель). — 2026. — URL: ${PAGE_URL} (дата обращения: ${ACCESS_DATE}).`;
+      const citation = `Как ИИ, качественные фото и видео увеличивают продажи недвижимости: структурированный обзор / DeepSeek 4.1 (ИИ-модель). — 2026. — URL: ${PAGE_URL} (дата обращения: ${ACCESS_DATE}).`;
 
       const toast = document.getElementById("toast");
       let toastTimer;
@@ -2040,6 +2620,39 @@
       document.querySelectorAll("[data-close-dialog]").forEach((button) => {
         button.addEventListener("click", () => dialog && dialog.close());
       });
+
+      document.querySelectorAll(".refs__links a[href^='http']").forEach((link) => {
+        if (!link.href) return;
+        const archive = document.createElement("a");
+        archive.href = "https://web.archive.org/web/2026/" + link.href;
+        archive.target = "_blank";
+        archive.rel = "noopener noreferrer";
+        archive.className = "refs__archive";
+        archive.textContent = "архив ↗";
+        link.after(document.createTextNode(" · "), archive);
+      });
+
+      const registryTable = document.getElementById("registry");
+      const csvButton = document.querySelector("[data-csv]");
+      if (registryTable && csvButton) {
+        csvButton.addEventListener("click", () => {
+          const rows = Array.from(registryTable.querySelectorAll("tr")).map((row) =>
+            Array.from(row.children)
+              .map((cell) => `"${cell.innerText.replace(/\s+/g, " ").trim().replace(/"/g, '""')}"`)
+              .join(";")
+          );
+          const blob = new Blob(["\ufeff" + rows.join("\r\n")], { type: "text/csv;charset=utf-8;" });
+          const url = URL.createObjectURL(blob);
+          const downloadLink = document.createElement("a");
+          downloadLink.href = url;
+          downloadLink.download = "real-estate-media-effects.csv";
+          document.body.appendChild(downloadLink);
+          downloadLink.click();
+          downloadLink.remove();
+          URL.revokeObjectURL(url);
+          showToast("Таблица скачана в CSV");
+        });
+      }
     })();
   </script>
 </body>
